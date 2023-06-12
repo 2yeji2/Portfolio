@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+:root {
+  --font-en: 'Playfair Display', serif;
+  --font-ko: 'Pretendard Variable', '맑은고딕', sans-serif;
+}
+
+/* common */
+.bold {
+  font-weight: 600;
+}
+
+.ghost-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e5a8a8;
+  width: 125px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.ghost-btn p {
+  margin-right: 10px;
+  margin-left: 5px;
+  font-family: var(--font-ko);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pink {
+  color: #c36d6d;
+}
+/* --------------------- ---------------------*/
+
+/* nav */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header .logo img {
+  width: 60%;
+}
+.header .login {
+  display: flex;
+}
+
+.header .login a {
+  text-align: center;
+  margin: 10px;
+  font-family: var(--font-ko);
+}
+
+/* menu */
+.menu {
+  text-transform: uppercase;
+  font-family: var(--font-ko);
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 60vh;
+  display: none;
+}
+.menu li {
+  margin: 25px 0 25px 0;
+}
+
+/* banner */
+header .main-banner {
+  background: url(./images/main-banner.png) no-repeat;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 10vh;
+}
+
+/* scroll-circle */
+header .scroll {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .scroll a {
+  margin: 3px;
+}
+
+/* main */
+
+/* blur the line */
+
+main .main-img1 {
+  display: none;
+}
+
+/* 립스틱사진 */
+main .main-img2 img {
+  width: 80%;
+  border-radius: 200px 200px 0 0;
+  display: block;
+  margin: 0 auto;
+}
+
+main .main-txtbox h2 {
+  font-family: var(--font-en);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+main .main-txtbox h3 {
+  display: none;
+}
+
+main .main-txtbox {
+  font-family: var(--font-ko);
+  text-align: center;
+  margin-top: 50px;
+}
+
+main .ghost-btn {
+  margin: 8vh auto;
+  margin-bottom: 15vh;
+}
+
+/* 립스틱 스크롤 3개 */
+
+.lipstick p,
+h4 {
+  text-transform: uppercase;
+  font-family: var(--font-ko);
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.lipstick h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.lipstick .soft-matte {
+  width: 390px;
+  height: 75vh;
+  margin: 10px;
+  background: url(./images/main-1.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .soft-matte .box1 {
+  width: 390px;
+  height: 75vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.lipstick .syrup {
+  width: 390px;
+  height: 75vh;
+  margin: 10px;
+  background: url(./images/main-2.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  display: none;
+}
+
+.lipstick .syrup .box2 {
+  width: 390px;
+  height: 75vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.lipstick .yay {
+  width: 390px;
+  height: 75vh;
+  margin: 10px;
+  background: url(./images/main-3.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  display: none;
+}
+
+.lipstick .yay .box3 {
+  width: 390px;
+  height: 75vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* 리뷰이벤트*/
+.review {
+  height: 50vh;
+  background: url(./images/review.jpg) no-repeat 60% / cover;
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review h2 {
+  font-family: var(--font-en);
+  color: #333333;
+  font-weight: 600;
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+.review h3 {
+  font-family: var(--font-ko);
+  color: #444444;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.review h3:nth-child(3) {
+  width: 42%;
+  line-height: 1.5;
+}
+
+.review h4 {
+  color: #444444;
+  font-size: 0.9rem;
+  margin: 10px 0 30px 20px;
+}
+
+.review .ghost-btn {
+  margin-left: 30px;
+  font-size: 0.8rem;
+}
+
+/* FAQ */
+.faq {
+  background: url(./images/FAQ1.png) no-repeat 40% / cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-en);
+  color: white;
+}
+
+.faq h1 {
+  font-size: 3.3rem;
+  letter-spacing: 5px;
+}
+
+.faq p {
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+/* shopping guide */
+
+.shopping-guide {
+  background: url(./images/shoppingguide1.jpg) no-repeat 40% / cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-en);
+  color: white;
+}
+
+.shopping-guide h1 {
+  font-size: 2.5rem;
+}
+
+.shopping-guide p {
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+/* best product */
+
+.best-pd-txtbox h3 {
+  font-family: var(--font-ko);
+  margin: 25vh 0 0 10px;
+  font-size: 1.7rem;
+}
+
+.best-pd-txtbox h4 {
+  font-family: var(--font-en);
+  font-size: 3rem;
+  margin: -15px 0 0 10px;
+  color: #282828;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.best-pd-txtbox p {
+  margin: 5vh 0 5vh 10px;
+  font-family: var(--font-ko);
+}
+
+/* 상품  */
+.best-pd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.best-pd img {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+}
+
+.best-pd figure {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #e5a8a8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.best-pd figure figcaption {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #986161;
+  font-family: var(--font-ko);
+}
+
+/* customer center */
+.customer {
+  height: 60vh;
+  background-color: #f0eded;
+  margin-top: 20vh;
+  padding-top: 10vh;
+}
+
+.customer h3 {
+  font-family: var(--font-en);
+  font-size: 2.5rem;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+.customer .info {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 5vw;
+}
+
+.customer .info p {
+  font-family: var(--font-ko);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.customer .ghost-btn {
+  width: 145px;
+  margin: 6vh auto;
+  font-size: 0.8rem;
+}
+
+/* footer */
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 5vw;
+}
+
+.footer img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--font-ko);
+}
+
+.icon {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+}
+
+.icon a {
+  margin: 4vw;
+}
+
+/* copy */
+.copy {
+  font-family: var(--font-ko);
+  color: #767676;
+  font-size: 10px;
+  margin-top: 1vh;
+}
+
+.copy p {
+  display: inline;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-family: var(--font-ko);
+  color: #767676;
+  font-size: 10px;
+}
+
+/* 위로가기버튼 */
+.top {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(229, 168, 168, 60%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-ko);
+  font-size: 14px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
