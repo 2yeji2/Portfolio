@@ -92,15 +92,13 @@ header .scroll a {
   margin: 3px;
 }
 
-/* main */
-
 /* blur the line */
 
 main .main-img1 {
   display: none;
 }
 
-/* 립스틱사진 */
+/* 립스틱  반원 사진 */
 
 main .main-img2 img {
   display: block;
@@ -416,22 +414,27 @@ h4 {
 }
 
 /* footer */
-.footer {
-  background-color: rgb(0, 0, 0);
-  padding: 5vw 0 2vw 0;
-  height: 25vh;
-}
 
 .footer img {
-  display: block;
-  margin: 5px auto;
+  margin: 0 3vw;
+}
+.footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2vh;
 }
 
 .footer ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  margin: 5vw 0 7vw 0;
-  padding: 0 5vw 0 5vw;
+  width: 40vw;
+}
+
+.footer li {
+  margin: 3vh;
 }
 
 .footer ul li a {
@@ -445,9 +448,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid white;
   height: 7vh;
-  width: 100%;
+  width: 40vw;
 }
 
 .icon a {
@@ -472,8 +474,18 @@ footer p {
   font-family: var(--font-ko);
   color: #767676;
   font-size: 10px;
-  margin-bottom: 1vh;
+  margin: 0 0 1vh 1vw;
 }
+
+.copy2 {
+  display: flex;
+}
+
+.copy2 p a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* 위로가기버튼 */
 .top {
   width: 40px;
