@@ -1,4 +1,5 @@
 @charset "utf-8";
+@charset "utf-8";
 
 /* common */
 .bold {
@@ -13,6 +14,8 @@
   width: 125px;
   padding: 5px;
   border-radius: 50px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .ghost-btn p {
@@ -23,6 +26,9 @@
   font-size: 14px;
 }
 
+.ghost-btn:hover {
+  background-color: #e5a8a8;
+}
 /* --------------------- ---------------------*/
 
 /* nav */
@@ -41,7 +47,7 @@ header {
 }
 
 .header .logo img {
-  width: 60%;
+  width: 75%;
   padding: 3vw;
 }
 
@@ -51,38 +57,54 @@ header {
 
 .header .login a {
   text-align: center;
-  margin: 3vw;
+  margin: 2vw;
   font-family: var(--font-ko);
+  font-size: 1.3rem;
 }
 
 /* 로그인 메뉴 */
-
 .login li:nth-child(3) {
-  display: block;
+  display: none;
 }
 
 .login li:nth-child(4) {
-  display: none;
+  display: block;
 }
 
 .login li:nth-child(5) {
-  display: none;
+  display: block;
 }
-
 /* menu */
 .menu {
   text-transform: uppercase;
   font-family: var(--font-ko);
   font-size: 1.5rem;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
-  padding: 20px;
-  height: 58vh;
-  display: none;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu li {
   margin: 25px 0 25px 0;
+  width: 12.5%;
+  height: 5vh;
+  text-align: center;
+  line-height: 5vh;
+  border-right: 1px solid white;
+  font-size: 1.2rem;
+  transition: 0.6s;
+}
+
+.menu li:last-child {
+  border-right: none;
+}
+
+.menu li:hover {
+  color: black;
+  background-color: white;
 }
 
 /* banner */
@@ -97,7 +119,7 @@ header .main-banner {
 /* scroll-circle */
 header .scroll {
   position: absolute;
-  bottom: 10vh;
+  bottom: 1vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -106,47 +128,66 @@ header .scroll a {
   margin: 3px;
 }
 
-/* blur the line */
+/* main */
 
 main .main-img1 {
-  display: none;
+  display: block;
+  /* margin: 20vh 0 0 15vw; */
 }
 
-/* 립스틱  반원 사진 */
+main .main-img1 img {
+  width: 60%;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+/* 립스틱 반원 사진 */
+
+main .blur-the-line {
+  min-width: 50%;
+  margin: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
 main .main-img2 img {
   display: block;
-  margin: 30vh auto 0;
-  width: 70%;
+  width: 60%;
+  margin-left: 10vw;
+  grid-column: sapn 2;
 }
 
 main .main-txtbox h2 {
   font-family: var(--font-en);
-  font-size: 4rem;
+  font-size: 4.3rem;
   margin-bottom: 10px;
   color: #222222;
 }
 
 main .main-txtbox h3 {
-  display: none;
+  display: block;
+  font-family: var(--font-en);
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 main .main-txtbox {
   font-family: var(--font-ko);
-  font-size: 1.1rem;
-  text-align: center;
-  margin-top: 50px;
+  font-size: 1.2rem;
+  text-align: left;
   color: #333333;
+  margin-left: 5.5vw;
 }
 
 main .ghost-btn {
-  margin: 8vh auto;
-  margin-bottom: 15vh;
+  margin: 8vh;
 }
 
 /* 립스틱 스크롤 3개 */
 
 .lipstick {
+  width: 60vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -171,20 +212,17 @@ h4 {
 }
 
 .lipstick .soft-matte {
-  width: 95%;
-  height: 60vh;
+  width: 50%;
   margin: 10px auto;
   background: url(./images/main-1.png) no-repeat 100% / cover;
   display: flex;
   flex-direction: column;
   justify-content: end;
   position: relative;
-  transition: 1s;
+  overflow: hidden;
 }
 
 .lipstick .soft-matte .box1 {
-  width: 100%;
-  height: 60vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -195,23 +233,26 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 1s;
+}
+
+.lipstick .soft-matte:hover .box1 {
+  opacity: 0;
+  cursor: pointer;
 }
 
 .lipstick .syrup {
-  width: 80%;
-  height: 60vh;
+  width: 50%;
   margin: 10px auto;
   background: url(./images/main-2.png) no-repeat 100% / cover;
   display: flex;
   flex-direction: column;
   justify-content: end;
   position: relative;
-  display: none;
+  overflow: hidden;
 }
 
 .lipstick .syrup .box2 {
-  width: 100%;
-  height: 60vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -222,22 +263,25 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 1s;
+}
+
+.lipstick .syrup:hover .box2 {
+  opacity: 0;
+  cursor: pointer;
 }
 
 .lipstick .yay {
-  width: 80%;
-  height: 60vh;
+  width: 50%;
   margin: 10px auto;
   background: url(./images/main-3.png) no-repeat 100% / cover;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: end;
   position: relative;
 }
 
 .lipstick .yay .box3 {
-  width: 100%;
-  height: 60vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -248,54 +292,73 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 1s;
+}
+
+.lipstick .yay:hover .box3 {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* 리뷰 큐엔에이 쇼핑가이드 */
+.review-faq-sg {
+  height: 70vh;
+  margin-top: 30vh;
+  margin-bottom: 25vh;
+  display: grid;
+  grid-template-areas:
+    'a .'
+    'a b'
+    'a c';
 }
 
 /* 리뷰이벤트*/
 .review {
-  height: 50vh;
-  background: url(./images/review.jpg) no-repeat 60% / cover;
-  margin-top: 30vh;
+  margin: 0;
+  height: 100%;
+  background: url(./images/review.jpg) no-repeat 100% / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  grid-area: a;
 }
 
 .review h2 {
   font-family: var(--font-en);
   color: #333333;
   font-weight: 600;
-  font-size: 2.7rem;
+  font-size: 4.5rem;
   margin-bottom: 40px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .review h3 {
   font-family: var(--font-ko);
   color: #444444;
   margin-bottom: 5px;
-  margin-left: 20px;
-  font-size: 1rem;
+  margin-left: 50px;
+  font-size: 1.2rem;
 }
 
 .review h3:nth-child(3) {
-  width: 42%;
+  width: 45%;
   line-height: 1.5;
 }
 
 .review h4 {
   color: #444444;
-  font-size: 0.9rem;
-  margin: 10px 0 30px 20px;
+  font-size: 1rem;
+  margin: 10px 0 30px 50px;
 }
 
 .review .ghost-btn {
-  margin-left: 30px;
+  margin-left: 50px;
   font-size: 0.8rem;
 }
 
 /* FAQ */
 .faq {
-  background: url(./images/FAQ1.png) no-repeat 40% / cover;
+  background: url(./images/FAQ1.png) no-repeat 30% 5% / cover;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -303,22 +366,30 @@ h4 {
   align-items: center;
   font-family: var(--font-en);
   color: white;
+  grid-area: b;
 }
 
 .faq h1 {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   letter-spacing: 5px;
 }
 
 .faq p {
   text-decoration: underline;
   margin-top: 15px;
+  font-size: 1.2rem;
+  color: #ffcaca;
+  transition: 1s;
+}
+
+.faq p:hover {
+  color: white;
 }
 
 /* shopping guide */
 
 .shopping-guide {
-  background: url(./images/shoppingguide1.jpg) no-repeat 40% / cover;
+  background: url(./images/shoppingguide1.jpg) no-repeat 30% 5% / cover;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -326,62 +397,99 @@ h4 {
   align-items: center;
   font-family: var(--font-en);
   color: white;
+  grid-area: c;
 }
 
 .shopping-guide h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .shopping-guide p {
   text-decoration: underline;
   margin-top: 15px;
+  font-size: 1.2rem;
+  color: #ffcaca;
+  transition: 0.5s;
+}
+
+.shopping-guide p:hover {
+  color: rgb(255, 255, 255);
 }
 
 /* best product */
 
+.best-product {
+  display: flex;
+  justify-content: space-around;
+}
+
 .best-pd-txtbox h3 {
   font-family: var(--font-ko);
   margin: 25vh 0 0 10px;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   color: #282828;
 }
 
 .best-pd-txtbox h4 {
   font-family: var(--font-en);
-  font-size: 3rem;
+  font-size: 4rem;
   margin: -15px 0 0 10px;
   color: #282828;
   text-transform: capitalize;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .best-pd-txtbox p {
   margin: 1vh 0 5vh 10px;
   font-family: var(--font-ko);
+  font-size: 1.3rem;
 }
 
-/* 상품  */
+.best-product {
+  position: relative;
+}
 
+.best-pd-section1::after {
+  content: '';
+  width: 1px;
+  height: 60%;
+  background-color: #a4a4a4;
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+}
+
+/* 상품 네모칸 */
 .best-pd {
   width: 350px;
-  margin-left: 2.5vw;
+  margin-left: 1vw;
+  margin-bottom: 20vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
 .best-pd img {
-  width: 85%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
 
 .best-pd figure {
-  width: 110px;
-  height: 115px;
-  border: 2px solid #e5a8a8;
+  width: 140px;
+  height: 150px;
+  border: 2px solid #e9bfbf;
   border-radius: 10px;
-  padding: 1vw;
+  transition: 1s;
+}
+
+.best-pd figure:hover {
+  background: rgb(227, 248, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 248, 255, 1) 14%,
+    rgba(255, 213, 254, 1) 100%
+  );
 }
 
 .best-pd figure figcaption {
@@ -390,23 +498,24 @@ h4 {
   font-family: var(--font-ko);
 }
 
+/* 고객센터 */
 .customer h3 {
   font-family: var(--font-en);
-  font-size: 2.5rem;
-  margin-bottom: 5vh;
+  font-size: 3.5rem;
+  margin-bottom: 9vh;
   text-align: center;
 }
 
 .customer {
   height: 65vh;
-  background-color: #f0eded;
-  margin-top: 20vh;
+  margin-top: 23vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 
 .customer .info {
@@ -418,7 +527,7 @@ h4 {
 
 .customer .info p {
   font-family: var(--font-ko);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
   text-align: left;
 }
@@ -430,42 +539,48 @@ h4 {
 
 .customer .ghost-btn {
   width: 145px;
-  margin: 6vh auto;
+  margin: 8vh auto;
   font-size: 0.8rem;
 }
 
 /* footer */
-
 .footer img {
-  margin: 0 3vw;
+  margin-bottom: 2vh;
 }
 .footer {
   background-color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2vh;
+  flex-direction: row;
 }
 
 .footer ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 40vw;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
 }
 
-.footer li {
-  margin: 3vh;
+.footer ul li {
+  width: 25%;
 }
 
 .footer ul li a {
-  color: white;
+  color: rgb(156, 156, 156);
   text-transform: uppercase;
   font-family: var(--font-ko);
+  font-size: 1.2rem;
+  transition: 0.7s;
+  text-align: center;
+}
+
+.footer ul li a:hover {
+  color: white;
+  font-weight: bold;
 }
 
 .icon {
-  background-color: black;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,6 +590,15 @@ h4 {
 
 .icon a {
   margin: 2vw;
+}
+
+.icon svg {
+  fill: rgb(156, 156, 156);
+  transition: 0.5s;
+}
+
+.icon svg:hover {
+  fill: white;
 }
 
 /* copy */
@@ -494,7 +618,7 @@ h4 {
 footer p {
   font-family: var(--font-ko);
   color: #767676;
-  font-size: 10px;
+  font-size: 0.8rem;
   margin: 0 0 1vh 1vw;
 }
 
@@ -502,8 +626,12 @@ footer p {
   display: flex;
 }
 
-.copy2 p a {
-  text-decoration: underline;
+.copy2 p {
+  transition: 0.7s;
+}
+
+.copy2 p:last-child:hover {
+  font-weight: bold;
 }
 
 /* 위로가기버튼 */
@@ -521,4 +649,10 @@ footer p {
   position: fixed;
   right: 10px;
   bottom: 10px;
+  transition: 0.7s;
+}
+
+.top:hover {
+  transform: translateY(-10px);
+  background-color: #9fe2ff;
 }

@@ -14,6 +14,7 @@
   padding: 5px;
   border-radius: 50px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .ghost-btn p {
@@ -58,6 +59,20 @@ header {
   margin: 3vw;
   font-family: var(--font-ko);
   font-size: 1.3rem;
+}
+
+/* 로그인 메뉴 */
+
+.login li:nth-child(3) {
+  display: block;
+}
+
+.login li:nth-child(4) {
+  display: none;
+}
+
+.login li:nth-child(5) {
+  display: none;
 }
 
 /* menu */
@@ -113,7 +128,7 @@ main .main-img1 img {
 /* 립스틱 반원 사진 */
 
 main .blur-the-line {
-  width: 75%;
+  min-width: 75%;
   margin: 30vh auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,12 +171,13 @@ main .ghost-btn {
 /* 립스틱 스크롤 3개 */
 
 .lipstick {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .lipstick p,
 h4 {
   text-transform: uppercase;
@@ -180,10 +196,9 @@ h4 {
 }
 
 .lipstick .soft-matte {
-  width: 390px;
-  height: 60vh;
+  width: 50%;
   margin: 10px auto;
-  background: url(./images/main-1.png) no-repeat;
+  background: url(./images/main-1.png) no-repeat 30% / cover;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -191,8 +206,6 @@ h4 {
 }
 
 .lipstick .soft-matte .box1 {
-  width: 390px;
-  height: 60vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -203,23 +216,26 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  transition: 1s;
+}
+
+.lipstick .soft-matte:hover .box1 {
+  opacity: 0;
+  cursor: pointer;
 }
 
 .lipstick .syrup {
-  width: 390px;
-  height: 60vh;
+  width: 50%;
   margin: 10px auto;
   background: url(./images/main-2.png) no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: end;
   position: relative;
+  overflow: hidden;
 }
 
 .lipstick .syrup .box2 {
-  width: 390px;
-  height: 60vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -230,23 +246,25 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 1s;
+}
+
+.lipstick .syrup:hover .box2 {
+  opacity: 0;
+  cursor: pointer;
 }
 
 .lipstick .yay {
-  width: 390px;
-  height: 60vh;
+  width: 50%;
   margin: 10px auto;
-  background: url(./images/main-3.png) no-repeat;
-  display: flex;
+  background: url(./images/main-3.png) no-repeat 50% / cover;
+  display: none;
   flex-direction: column;
   justify-content: end;
   position: relative;
-  display: none;
 }
 
 .lipstick .yay .box3 {
-  width: 390px;
-  height: 60vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -259,15 +277,21 @@ h4 {
   left: 0;
 }
 
+.lipstick .yay:hover .box3 {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* 리뷰 큐엔에이 쇼핑가이드 */
 .review-faq-sg {
   height: 70vh;
   margin-top: 30vh;
   margin-bottom: 25vh;
   display: grid;
   grid-template-areas:
-    "a ."
-    "a b"
-    "a c";
+    'a .'
+    'a b'
+    'a c';
 }
 
 /* 리뷰이벤트*/
@@ -336,7 +360,7 @@ h4 {
   text-decoration: underline;
   margin-top: 15px;
   font-size: 1.1rem;
-  color: #000000;
+  color: #ffcaca;
   transition: 1s;
 }
 
@@ -366,12 +390,12 @@ h4 {
   text-decoration: underline;
   margin-top: 15px;
   font-size: 1.1rem;
-  color: #000000;
-  transition: 1s;
+  color: #ffcaca;
+  transition: 0.5s;
 }
 
 .shopping-guide p:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* best product */
@@ -385,6 +409,7 @@ h4 {
   font-family: var(--font-ko);
   margin: 25vh 0 0 10px;
   font-size: 2rem;
+  color: #282828;
 }
 
 .best-pd-txtbox h4 {
@@ -407,7 +432,7 @@ h4 {
 }
 
 .best-pd-section1::after {
-  content: "";
+  content: '';
   width: 1px;
   height: 65%;
   background-color: #a4a4a4;
@@ -434,14 +459,23 @@ h4 {
 .best-pd figure {
   width: 110px;
   height: 115px;
-  border: 2px solid #e5a8a8;
+  border: 2px solid #e9bfbf;
   border-radius: 10px;
   padding: 1vw;
+  transition: 1s;
+}
+
+.best-pd figure:hover {
+  background: rgb(227, 248, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 248, 255, 1) 14%,
+    rgba(255, 213, 254, 1) 100%
+  );
 }
 
 .best-pd figure figcaption {
   text-align: center;
-  margin-bottom: 5px;
   color: #986161;
   font-family: var(--font-ko);
 }
@@ -518,7 +552,7 @@ h4 {
   text-transform: uppercase;
   font-family: var(--font-ko);
   font-size: 1.2rem;
-  transition: 1s;
+  transition: 0.7s;
   text-align: center;
 }
 
@@ -538,6 +572,15 @@ h4 {
 
 .icon a {
   margin: 2vw;
+}
+
+.icon svg {
+  fill: rgb(156, 156, 156);
+  transition: 0.5s;
+}
+
+.icon svg:hover {
+  fill: white;
 }
 
 /* copy */
@@ -565,9 +608,12 @@ footer p {
   display: flex;
 }
 
-.copy2 p a {
+.copy2 p {
+  transition: 0.7s;
+}
+
+.copy2 p:last-child:hover {
   font-weight: bold;
-  text-decoration: underline;
 }
 
 /* 위로가기버튼 */
@@ -585,4 +631,10 @@ footer p {
   position: fixed;
   right: 10px;
   bottom: 10px;
+  transition: 0.7s;
+}
+
+.top:hover {
+  transform: translateY(-10px);
+  background-color: #9fe2ff;
 }
