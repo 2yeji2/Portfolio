@@ -306,7 +306,7 @@ h4 {
 
 /* FAQ */
 .faq {
-  background: url(./images/FAQ1.png) no-repeat 40% / cover;
+  background: url(./images/faq.png) no-repeat 40% / cover;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -329,7 +329,7 @@ h4 {
 /* shopping guide */
 
 .shopping-guide {
-  background: url(./images/shoppingguide1.jpg) no-repeat 40% / cover;
+  background: url(./images/shoppingguide.png) no-repeat 40% / cover;
   height: 40vh;
   display: flex;
   flex-direction: column;
