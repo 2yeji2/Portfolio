@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* common */
 .bold {
   font-weight: 600;
@@ -329,7 +330,7 @@ h4 {
 }
 
 .review h3:nth-child(3) {
-  width: 45%;
+  min-width: 45%;
   line-height: 1.5;
 }
 
