@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
 /* common */
 .bold {
   font-weight: 600;
@@ -97,7 +100,7 @@ header .main-banner {
   width: 100%;
   position: relative;
   margin-bottom: 10vh;
-  background: #ddd url(./images/main.jpg) no-repeat 15% 50% / cover;
+  background: url(./images/PCmain.png) no-repeat 40% / cover;
 }
 
 /* scroll-circle */
@@ -112,6 +115,9 @@ header .scroll a {
   margin: 3px;
 }
 
+header .scroll p {
+  text-align: center;
+}
 /* main */
 
 main .main-img1 {
@@ -216,7 +222,7 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .lipstick .soft-matte:hover .box1 {
@@ -246,7 +252,7 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .lipstick .syrup:hover .box2 {
@@ -360,12 +366,14 @@ h4 {
   text-decoration: underline;
   margin-top: 15px;
   font-size: 1.1rem;
-  color: #ffcaca;
-  transition: 1s;
+  color: white;
+  transition: 0.5s;
 }
 
 .faq p:hover {
   color: white;
+  background-color: black;
+  text-decoration: none;
 }
 
 /* shopping guide */
@@ -390,12 +398,14 @@ h4 {
   text-decoration: underline;
   margin-top: 15px;
   font-size: 1.1rem;
-  color: #ffcaca;
+  color: white;
   transition: 0.5s;
 }
 
 .shopping-guide p:hover {
-  color: rgb(255, 255, 255);
+  color: white;
+  background-color: black;
+  text-decoration: none;
 }
 
 /* best product */
@@ -462,7 +472,7 @@ h4 {
   border: 2px solid #e9bfbf;
   border-radius: 10px;
   padding: 1vw;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .best-pd figure:hover {
@@ -484,13 +494,12 @@ h4 {
 .customer h3 {
   font-family: var(--font-en);
   font-size: 3rem;
-  margin-bottom: 5vh;
   text-align: center;
 }
 
 .customer {
   height: 65vh;
-  margin-top: 20vh;
+  margin-top: 17.5vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   display: flex;
@@ -521,7 +530,7 @@ h4 {
 
 .customer .ghost-btn {
   width: 145px;
-  margin: 6vh auto;
+  margin: 2vh auto;
   font-size: 0.8rem;
 }
 
@@ -552,7 +561,7 @@ h4 {
   text-transform: uppercase;
   font-family: var(--font-ko);
   font-size: 1.2rem;
-  transition: 0.7s;
+  transition: 0.5s;
   text-align: center;
 }
 
@@ -593,27 +602,42 @@ h4 {
 }
 
 .copy p {
-  display: inline;
-  position: relative;
-}
-
-footer p {
   font-family: var(--font-ko);
   color: #767676;
   font-size: 0.8rem;
   margin: 0 0 1vh 1vw;
 }
 
-.copy2 {
-  display: flex;
+footer .copy2 p {
+  font-family: var(--font-ko);
+  color: #767676;
+  font-size: 0.9rem;
+  margin: 0 0 1vh 1vw;
 }
 
-.copy2 p {
-  transition: 0.7s;
+.portfolio p {
+  background-color: black;
+  max-width: 20%;
+  height: 4.2vh;
+  text-align: center;
+  transition: 0.5s;
 }
 
-.copy2 p:last-child:hover {
-  font-weight: bold;
+.portfolio p a {
+  color: white;
+  line-height: 40px;
+  font-family: var(--font-ko);
+}
+
+.portfolio p:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.portfolio p:hover a {
+  text-decoration: underline;
+  color: black;
+  font-weight: 700;
 }
 
 /* 위로가기버튼 */
@@ -631,10 +655,10 @@ footer p {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .top:hover {
   transform: translateY(-10px);
-  background-color: #9fe2ff;
+  background-color: #ff585896;
 }

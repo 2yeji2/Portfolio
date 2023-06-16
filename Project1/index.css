@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* common */
 .bold {
   font-weight: 600;
@@ -91,7 +95,7 @@ header .main-banner {
   width: 100%;
   position: relative;
   margin-bottom: 10vh;
-  background: #ddd url(./images/main.jpg) no-repeat 15% 50% / cover;
+  background: url(./images/PCmain.png) no-repeat 20% / cover;
 }
 
 /* scroll-circle */
@@ -104,6 +108,13 @@ header .scroll {
 
 header .scroll a {
   margin: 3px;
+  margin-top: 2vh;
+  font-family: var(--font-ko);
+  color: #444444;
+}
+
+header .scroll p {
+  text-align: center;
 }
 
 /* blur the line */
@@ -487,23 +498,44 @@ h4 {
 }
 
 .copy p {
-  display: inline;
-  position: relative;
-}
-
-footer p {
   font-family: var(--font-ko);
   color: #767676;
-  font-size: 10px;
+  font-size: 0.8rem;
   margin: 0 0 1vh 1vw;
 }
 
-.copy2 {
-  display: flex;
+footer .copy2 p {
+  font-family: var(--font-ko);
+  color: #767676;
+  font-size: 0.8rem;
+  margin: 0 0 1vh 1vw;
 }
 
-.copy2 p a {
+.portfolio p {
+  background-color: black;
+  width: 32%;
+  height: 4.2vh;
+  text-align: center;
+  transition: 0.7s;
+  margin: 10px 0 10px 12px;
+  font-size: 0.8rem;
+}
+
+.portfolio p a {
+  color: white;
+  line-height: 4.2vh;
+  font-family: var(--font-ko);
+}
+
+.portfolio p:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.portfolio p:hover a {
   text-decoration: underline;
+  color: black;
+  font-weight: 700;
 }
 
 /* 위로가기버튼 */
