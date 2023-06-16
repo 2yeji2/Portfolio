@@ -95,7 +95,7 @@ header .main-banner {
   width: 100%;
   position: relative;
   margin-bottom: 10vh;
-  background: url(./images/PCmain.png) no-repeat 20% / cover;
+  background: url(./images/mbmain.png) no-repeat 20% / cover;
 }
 
 /* scroll-circle */
@@ -121,6 +121,7 @@ header .scroll p {
 
 main .main-img1 {
   display: none;
+  margin-left: 5vw;
 }
 
 /* 립스틱  반원 사진 */
@@ -146,7 +147,6 @@ main .main-txtbox {
   font-family: var(--font-ko);
   font-size: 1.1rem;
   text-align: center;
-  margin-top: 50px;
   color: #333333;
 }
 
@@ -517,7 +517,7 @@ footer .copy2 p {
   height: 4.2vh;
   text-align: center;
   transition: 0.7s;
-  margin: 10px 0 10px 12px;
+  margin: 5vh 0 10px 12px;
   font-size: 0.8rem;
 }
 
