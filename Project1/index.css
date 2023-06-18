@@ -27,6 +27,10 @@ html {
   font-size: 14px;
 }
 
+.pink {
+  color: #c36d6d;
+}
+
 /* --------------------- ---------------------*/
 
 /* nav */
@@ -101,7 +105,7 @@ header .main-banner {
 /* scroll-circle */
 header .scroll {
   position: absolute;
-  bottom: 10vh;
+  bottom: 3vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -128,7 +132,7 @@ main .main-img1 {
 
 main .main-img2 img {
   display: block;
-  margin: 30vh auto 0;
+  margin: 15vh auto 10vh;
   width: 70%;
 }
 
@@ -265,7 +269,7 @@ h4 {
 .review {
   height: 50vh;
   background: url(./images/review.jpg) no-repeat 60% / cover;
-  margin-top: 30vh;
+  margin-top: 13vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -352,7 +356,7 @@ h4 {
 
 .best-pd-txtbox h3 {
   font-family: var(--font-ko);
-  margin: 25vh 0 0 10px;
+  margin: 15vh 0 0 10px;
   font-size: 1.7rem;
   color: #282828;
 }
@@ -374,11 +378,12 @@ h4 {
 /* 상품  */
 
 .best-pd {
-  width: 350px;
+  width: 90%;
   margin-left: 2.5vw;
+  margin-right: 2.5vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .best-pd img {
@@ -388,9 +393,9 @@ h4 {
 }
 
 .best-pd figure {
-  width: 110px;
-  height: 115px;
-  border: 2px solid #e5a8a8;
+  width: 26vw;
+  height: 15.5vh;
+  border: 1px solid #e5a8a8;
   border-radius: 10px;
   padding: 1vw;
 }
@@ -411,8 +416,8 @@ h4 {
 .customer {
   height: 65vh;
   background-color: #f0eded;
-  margin-top: 20vh;
-  padding-top: 10vh;
+  margin-top: 15vh;
+  padding-top: 15vh;
   padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
@@ -510,6 +515,8 @@ footer .copy2 p {
   font-size: 0.8rem;
   margin: 0 0 1vh 1vw;
 }
+
+/* 포트폴리오 */
 
 .portfolio p {
   background-color: black;
