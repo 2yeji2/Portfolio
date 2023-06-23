@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bgc-main);
+}
+
+/* ----------------------------------section1-------------------------------------- */
+.first-main {
+  height: 100vh;
+  border-radius: 0 0 100px 100px;
+  position: relative;
+  background: var(--bgc-suv) url(./images/Gradient-Ellipse.png) no-repeat 25%
+    60%;
+  overflow: hidden;
+}
+
+article img {
+  position: absolute;
+  top: -18vh;
+  right: -10vw;
+}
+/* 다크모드 라이트모드 */
+.mode {
+  width: 230px;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  font-family: var(--font-suv);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+}
+
+.mode .dark {
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: #000000;
+}
+
+.mode .dark svg {
+  background-color: rgb(56, 56, 56);
+  padding: 6px;
+  margin-left: -20px;
+  width: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.mode .dark p {
+  margin-left: -35px;
+}
+
+.light {
+  display: none;
+}
+
+/* 왼쪽 제목 */
+.first-main .title {
+  margin-left: 5vw;
+  margin-top: 15vh;
+}
+
+.first-main .title h1,
+h2 {
+  font-family: var(--font-main);
+  font-size: 9rem;
+  color: black;
+}
+
+.first-main .title h2 {
+  color: var(--bgc-main);
+  margin-top: -7vh;
+}
+
+.first-main .title h3 {
+  width: 15vw;
+  min-width: 22vw;
+  font-family: var(--font-suv);
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-top: -2vh;
+  background: #fc72e8;
+  background: linear-gradient(135deg, #9a07d5 0%, #08e2ac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 오른쪽 글 */
+.first-main .suv-title {
+  font-family: var(--font-suv);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: right;
+  margin-right: 5vw;
+}
+
+.first-main .suv-title .bold {
+  font-weight: 700;
+}
+
+.first-main .suv-title #purple {
+  background-color: #cfb8fc;
+  padding: 3px;
+}
+
+/* 메뉴 */
+.first-main .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 29vw;
+  height: 7vh;
+  border-radius: 100px;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: auto;
+}
+
+.first-main .menu li {
+  width: 23%;
+  text-align: center;
+  font-family: var(--font-suv);
+  font-size: 1.3rem;
+  padding: 14px 0 14px 0;
+  border-radius: 50px;
+}
+
+.first-main .menu li:hover {
+  background-color: var(--bgc-main);
+}
+
+.first-main .menu li:last-child {
+  position: relative;
+}
+
+.menu .contactbox {
+  display: none;
+  position: absolute;
+  top: -10vh;
+  left: -4vw;
+  color: black;
+  background-color: var(--bgc-main);
+  border-radius: 50px;
+  height: 8vh;
+  width: 17vw;
+  /* display: flex; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu .contactbox .contact {
+  background-color: white;
+  width: 50px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.menu .contactbox svg {
+  width: 30px;
+}
+
+.menu .contactbox p {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu .contactbox .underline {
+  text-decoration: underline;
+}
+
+.menu li:last-child:hover > .contactbox {
+  display: flex;
+}
+
+/* ---------------------------------section2 ---------------------------------- */
+
+.animation {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animation p {
+  font-family: var(--font-main);
+  font-size: 4rem;
+}
+
+.animation svg {
+  width: 5vw;
+}

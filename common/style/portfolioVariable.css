@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+:root {
+  --font-main: "Anton", sans-serif;
+  --font-suv: "Pretendard Variable", "맑은고딕", sans-serif;
+  --bgc-main: #b188ff;
+  --bgc-suv: #fcf6f4;
+}
