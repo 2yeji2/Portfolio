@@ -23,7 +23,7 @@
 
 <body>
   <!-- -----------------------------------------------------------------section1------------------------------------------------------------------------------- -->
-  <article class="first-main">
+  <article id="first-main">
     <img src="./images/Gradient-Ellipse.png" alt="그라디언트도형">
     <!-- 다크모드 -->
     <div class="mode">
@@ -63,8 +63,8 @@
 
     <!-- fixed메뉴 -->
     <ul class="menu">
-      <li><a href=".first-main">HOME</a></li>
-      <li><a href="#">ABOUT</a></li>
+      <li><a href="#first-main">HOME</a></li>
+      <li><a href="#second-main">ABOUT</a></li>
       <li><a href="#">WORKS</a></li>
       <li>
         <a href="#">CONTACT</a>
@@ -125,7 +125,7 @@
 
   <!-- ----------------------------section3------------------------------------------- -->
   <!-- About me -->
-  <article class="second-main">
+  <article id="second-main">
     <h3>ABOUT</h3>
     <h4>ABOUT ME</h4>
 
@@ -155,13 +155,37 @@
           <p>어디서든 최고의 적응력을 뽐내는게<br> 저의 장점이라고 생각합니다.<br>흘러가는 새로운 변화에도 빠르게 적응하겠습니다.</p>
         </div>
       </div>
-
     </div>
-
   </article>
 
+  <!-- -------------------------------section4 ------------------------------- -->
+  <article id="third-main">
+    <!-- skill -->
+    <h4>SKILL</h4>
+    <div class="skill-wrapper">
+      <div class="html skill">
+        <p>HTML5 / CSS3</p>
+        <p>- 웹사이트 구축 밑 디자인<br>- 웹 접근성과 웹 표준화에 맞춘 콘텐츠 제작<br>- CSS3 flex, grid, position을 활용한 레이아웃 구현<br>- CSS3 style 및
+          animation 적용<br>- Media Query를 활용한 반응형 웹사이트 제작</p>
+      </div>
 
-  <article></article>
+      <div class="java skill">
+        <p>JavaScript / JQuery</p>
+        <p>- 자바스크립트 ES6+ 문법 이해<br>- 비동기 통신 ​Ajax를 이용한 JSON 데이터 활용</p>
+      </div>
+
+      <div class="figma skill">
+        <p>Photoshop / Illustrator / Figma</p>
+        <p>- 이미지 편집 & 디자인<br>- Prototype 제작<br>- UI/UX를 고려한 디자인</p>
+      </div>
+
+      <div class="git skill">
+        <p>Git / VSCode</p>
+        <p>- Github 배포<br>- Git 코드 버전 관리 및 GitHub로 팀원들과 원활한 소통 및 협업 가능<br>- VSCode 사용</p>
+      </div>
+    </div>
+  </article>
+
 
 
 </body>
