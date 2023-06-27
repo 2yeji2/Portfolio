@@ -165,7 +165,6 @@ h2 {
   border-radius: 50px;
   height: 8vh;
   width: 17vw;
-  /* display: flex; */
   justify-content: space-evenly;
   align-items: center;
 }
@@ -181,6 +180,10 @@ h2 {
   width: 30px;
 }
 
+.menu .contactbox svg:last-child {
+  cursor: pointer;
+}
+
 .menu .contactbox p {
   text-align: left;
   font-size: 1rem;
@@ -189,10 +192,6 @@ h2 {
 
 .menu .contactbox .underline {
   text-decoration: underline;
-}
-
-.menu li:last-child:hover > .contactbox {
-  display: flex;
 }
 
 /* ---------------------------------section2 ---------------------------------- */
