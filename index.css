@@ -105,8 +105,19 @@ h2 {
 }
 
 #first-main .suv-title #purple {
-  background-color: #cfb8fc;
-  padding: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+#first-main .suv-title #purple::before {
+  content: " ";
+  background-color: #decdff;
+  width: 10vw;
+  height: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* 메뉴 */
@@ -565,70 +576,81 @@ h2 {
   left: 3vw;
 }
 
-/* 프로젝트설명 */
-.project_name {
-  width: 50%;
-  background-color: #08e2ac;
+.project {
+  margin: 0 auto;
 }
 
-.project_name h3 {
+/* 프로젝트설명 */
+.project_name li h3 {
   font-size: 3.5rem;
   font-weight: 600;
-  color: white;
-  background-color: #161853;
-  width: 18.5vw;
-  text-align: center;
-  margin-bottom: 5vh;
+  color: rgb(0, 0, 0);
+  border-radius: 100px;
+  padding: 6px;
+  width: 20vw;
+  margin-bottom: 3vh;
+  margin-left: -10px;
+  position: relative;
+  z-index: 1;
+}
+
+.project_name li h3::after {
+  content: "";
+  background-color: #decdff;
+  width: 17.5vw;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 9px;
+  z-index: -1;
 }
 
 .project_name li {
   list-style: none;
-  font-size: 1.4rem;
-  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
+  margin: 10px 0 10px 0;
 }
 
 /* 프로젝트보러가기 */
-.project_name .gotoPj {
+.project .gotoPj {
   display: flex;
   align-items: center;
 }
 
-.project_name .gotoPj li {
-  font-size: 1.2rem;
+.project .gotoPj li {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 30px;
 }
 
-.project_name .gotoPj li:first-child {
-  border: 1px solid black;
+.project .gotoPj li:first-child {
   padding: 10px;
   border-radius: 100px;
   transition: 0.5s;
 }
 
-.project_name .gotoPj:hover li:first-child {
-  background-color: #b288ffa4;
-  border: 1px solid #b288ffa4;
-  font-weight: 600;
-}
-
-.project_name .gotoPj svg {
-  background-color: #b288ffa4;
+.project .gotoPj svg {
+  border: 1px solid black;
   border-radius: 50%;
-  padding: 10px;
-  margin-left: 10px;
+  padding: 6px;
   transition: 0.6s;
 }
 
-.project_name .gotoPj:hover svg {
+.project .gotoPj:hover svg {
+  background-color: #b288ffa4;
+  border: 1px solid #b288ffa4;
+}
+
+.project .gotoPj:hover svg {
   transform: translateX(10px);
 }
 
 /* 프로젝트 화면 */
 .project-img {
-  background-color: #cfb8fc;
   display: flex;
   align-items: center;
   cursor: pointer;
-  width: 50%;
+  margin-right: 4vw;
 }
 
 .project-img svg:nth-child(1) {
@@ -644,4 +666,9 @@ h2 {
   height: 50vh;
   border: 10px solid rgb(24, 24, 24);
   border-radius: 20px;
+  background: url(./images/Tbmain.png) no-repeat 50% / cover;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(135, 135, 135, 0);
+  box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(135, 135, 135, 0);
 }
