@@ -153,6 +153,7 @@ h2 {
 
 #first-main .menu li:last-child {
   position: relative;
+  cursor: pointer;
 }
 
 .menu .contactbox {
@@ -167,6 +168,7 @@ h2 {
   width: 17vw;
   justify-content: space-evenly;
   align-items: center;
+  border: 1px solid black;
 }
 
 .menu .contactbox .contact {
