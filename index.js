@@ -12,7 +12,7 @@ $(".contactbox")
 
 // a태그 막기
 $(function () {
-  $(".open_btn > a").on("click", function (e) {
+  $(".open_btn").on("click", function (e) {
     e.preventDefault();
   });
 });
