@@ -84,6 +84,7 @@ article img:last-child {
   padding: 10px;
   background-color: var(--bgc-main);
   color: black;
+  text-align: center;
 }
 
 /* 왼쪽 제목 */
