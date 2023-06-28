@@ -23,6 +23,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   border-radius: 0 0 100px 100px;
   position: relative;
+  background-color: var(--bgc-suv);
   background: var(--bgc-suv) url(./images/Gradient-Ellipse.png) no-repeat 25%
     60%;
   overflow: hidden;
@@ -33,6 +34,13 @@ article img {
   top: -18vh;
   right: -10vw;
 }
+
+article img:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* 다크모드 라이트모드 */
 .mode {
   width: 230px;
@@ -69,8 +77,13 @@ article img {
   margin-left: -35px;
 }
 
-.light {
-  display: none;
+.dark.light {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--bgc-main);
+  color: black;
 }
 
 /* 왼쪽 제목 */

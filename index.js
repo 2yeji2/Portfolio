@@ -14,3 +14,10 @@ $(".contactbox")
 $(".open_btn").on("click", (evt) => {
   evt.preventDefault();
 });
+
+//다크모드 토글
+$(".mode").on("click", () => {
+  $(".dark").toggleClass("light");
+  $(".dark").children("svg").css({ display: "none" });
+  $(".dark").attr("svg").text("Light Mode");
+});
