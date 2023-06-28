@@ -1,4 +1,8 @@
 @charset "utf-8";
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bgc-main);
+}
 
 /* scroll */
 body::-webkit-scrollbar {
@@ -12,10 +16,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #feff86;
   border-radius: 20px;
-}
-html {
-  scroll-behavior: smooth;
-  background-color: var(--bgc-main);
 }
 
 /* ----------------------------------section1-------------------------------------- */
