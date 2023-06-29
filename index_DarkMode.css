@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* ----------------------------------section1-------------------------------------- */
+#first-main.dark_mode {
+  background: black;
+}
+
+/* 왼쪽 제목 */
+#first-main .title.dark_mode h1 {
+  color: white;
+}
+
+#first-main .title.dark_mode h2 {
+  color: #8c56fa;
+}
+
+/* 오른쪽 글 */
+#first-main .suv-title.dark_mode {
+  color: white;
+}
+
+#first-main .suv-title.dark_mode #purple::before {
+  background-color: #8c56fa;
+}
+
+/* 메뉴 바 */
+#first-main .menu.dark_mode {
+  background-color: var(--bgc-main);
+  color: black;
+  border: 2px solid black;
+}
+
+#first-main .menu.dark_mode li:hover {
+  background-color: white;
+}
+
+/* ---------------------------------section3---------------------------------- */
+#second-main.dark_mode {
+  background-color: black;
+}
+
+#second-main.dark_mode h3 {
+  color: white;
+}
+
+#second-main.dark_mode h4 {
+  color: white;
+}
+
+#second-main .about_me .me1.dark_mode {
+  color: white;
+}
+
+#second-main .about_me .me1.dark_mode h2:before {
+  color: rgb(216, 255, 255);
+}
+
+#second-main .about_me .pers p:first-child.dark_mode {
+  color: rgb(200, 144, 245);
+}
+
+#second-main .about_me .pers p:last-child.dark_mode {
+  color: white;
+}
+
+/* --------------------------------------section4------------------------------- */
+#third-main.dark_mode {
+  background-color: black;
+}
+
+#third-main.dark_mode h4 {
+  color: white;
+}
+
+#third-main .skill-wrapper .skill p:nth-child(1).dark_mode {
+  color: rgb(200, 144, 245);
+}
+
+#third-main .skill-wrapper .skill p:nth-child(2).dark_mode {
+  color: white;
+}
+
+/* -----------------------------------------section6--------------------------------------- */
+#fourth-main.dark_mode {
+  background-color: black;
+}
+
+#fourth-main.dark_mode h4 {
+  color: white;
+}
+
+#fourth-main .project_name li.dark_mode {
+  color: white;
+}
+
+#fourth-main .project_name.dark_mode {
+  color: white;
+}
+
+.project .gotoPj.dark_mode li {
+  color: white;
+}
+
+.project .gotoPj.dark_mode svg {
+  border: 1px solid white;
+  fill: white;
+}
+
+.project .gotoPj:hover.dark_mode svg {
+  transform: translateX(10px);
+  background-color: rgb(222, 182, 255);
+  fill: black;
+}
+
+#fourth-main .project-img.dark_mode svg {
+  fill: white;
+}
+
+.project-img .box.dark_mode {
+  border: 10px solid white;
+}
