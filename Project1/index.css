@@ -102,25 +102,6 @@ header .main-banner {
   background: url(./images/mbmain.png) no-repeat 20% / cover;
 }
 
-/* scroll-circle */
-header .scroll {
-  position: absolute;
-  bottom: 3vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-header .scroll a {
-  margin: 3px;
-  margin-top: 2vh;
-  font-family: var(--font-ko);
-  color: #444444;
-}
-
-header .scroll p {
-  text-align: center;
-}
-
 /* blur the line */
 
 main .main-img1 {
@@ -161,6 +142,7 @@ main .ghost-btn {
 
 /* 립스틱 스크롤 3개 */
 .lipstick {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -185,7 +167,7 @@ h4 {
 }
 
 .lipstick .soft-matte {
-  width: 95%;
+  width: 100%;
   height: 60vh;
   margin: 10px auto;
   background: url(./images/main-1.png) no-repeat 100% / cover;
@@ -212,7 +194,7 @@ h4 {
 }
 
 .lipstick .syrup {
-  width: 80%;
+  width: 100%;
   height: 60vh;
   margin: 10px auto;
   background: url(./images/main-2.png) no-repeat 100% / cover;
@@ -220,7 +202,7 @@ h4 {
   flex-direction: column;
   justify-content: end;
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 .lipstick .syrup .box2 {
@@ -239,17 +221,69 @@ h4 {
 }
 
 .lipstick .yay {
-  width: 80%;
+  width: 100%;
   height: 60vh;
   margin: 10px auto;
   background: url(./images/main-3.png) no-repeat 100% / cover;
-  display: none;
+  /* display: none; */
   flex-direction: column;
   justify-content: end;
   position: relative;
 }
 
 .lipstick .yay .box3 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .blur-water {
+  width: 100%;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-4.png) no-repeat 100% / cover;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .blur-water .box4 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .plumping {
+  width: 100%;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-5.png) no-repeat 100% / cover;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .plumping .box5 {
   width: 100%;
   height: 60vh;
   background: rgb(2, 0, 36);

@@ -23,12 +23,7 @@ $(".toggle_box span").on("click", () => {
   $(".menu").toggleClass("dark_mode");
   $("#second-main").toggleClass("dark_mode");
   $(".me1").toggleClass("dark_mode");
-  $(".pers").children("p").eq(0).toggleClass("dark_mode");
-  $(".pers").children("p").eq(1).toggleClass("dark_mode");
-  $(".pers").children("p").eq(2).toggleClass("dark_mode");
-  $(".pers").children("p").eq(3).toggleClass("dark_mode");
-  $(".pers").children("p").eq(4).toggleClass("dark_mode");
-  $(".pers").children("p").eq(5).toggleClass("dark_mode");
+  $(".pers").children("p").toggleClass("dark_mode");
   $("#third-main").toggleClass("dark_mode");
   $(".skill").children("p").eq(0).toggleClass("dark_mode");
   $(".skill").children("p").eq(1).toggleClass("dark_mode");
@@ -39,8 +34,26 @@ $(".toggle_box span").on("click", () => {
   $(".skill").children("p").eq(6).toggleClass("dark_mode");
   $(".skill").children("p").eq(7).toggleClass("dark_mode");
   $("#fourth-main").toggleClass("dark_mode");
-  $(".project_name").toggleClass("dark_mode");
-  $(".gotoPj").toggleClass("dark_mode");
-  $(".project-img").toggleClass("dark_mode");
-  $(".box").toggleClass("dark_mode");
+  $(".project").toggleClass("dark_mode");
+  $(".project").children("li").toggleClass("dark_mode");
+  $(".project").children("span").toggleClass("dark_mode");
+  $(".project").children(".box").toggleClass("dark_mode");
+  $(".swiper-button-prev").toggleClass("dark_mode");
+  $(".swiper-button-next").toggleClass("dark_mode");
+  $(".swiper-pagination-bullet").toggleClass("dark_mode");
+});
+
+// 스와이퍼
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
 });

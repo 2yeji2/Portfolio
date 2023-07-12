@@ -104,21 +104,6 @@ header .main-banner {
   background: url(./images/Tbmain.png) no-repeat 40% / cover;
 }
 
-/* scroll-circle */
-header .scroll {
-  position: absolute;
-  bottom: 5vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-header .scroll a {
-  margin: 3px;
-}
-
-header .scroll p {
-  text-align: center;
-}
 
 /* main */
 

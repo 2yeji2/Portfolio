@@ -59,7 +59,7 @@
   color: rgb(200, 144, 245);
 }
 
-#second-main .about_me .pers p:last-child.dark_mode {
+#second-main .about_me .pers p.dark_mode {
   color: white;
 }
 
@@ -80,6 +80,10 @@
   color: white;
 }
 
+#third-main .skill-wrapper .skill p:first-child.dark_mode:hover {
+  color: #f7d060;
+}
+
 /* -----------------------------------------section6--------------------------------------- */
 #fourth-main.dark_mode {
   background-color: black;
@@ -89,33 +93,27 @@
   color: white;
 }
 
-#fourth-main .project_name li.dark_mode {
+.project.dark_mode {
   color: white;
 }
 
-#fourth-main .project_name.dark_mode {
-  color: white;
+.project.dark_mode li h3::before {
+  background-color: #8c56fa;
 }
 
-.project .gotoPj.dark_mode li {
-  color: white;
+.project.dark_mode li span::before {
+  background-color: #8c56fa;
 }
 
-.project .gotoPj.dark_mode svg {
-  border: 1px solid white;
-  fill: white;
+.project .box.dark_mode {
+  border: 10px solid rgb(175, 175, 175);
 }
 
-.project .gotoPj:hover.dark_mode svg {
-  transform: translateX(10px);
-  background-color: rgb(222, 182, 255);
-  fill: black;
+.swiper-button-prev.dark_mode:after,
+.swiper-button-next.dark_mode:after {
+  color: rgb(255, 255, 255);
 }
 
-#fourth-main .project-img.dark_mode svg {
-  fill: white;
-}
-
-.project-img .box.dark_mode {
-  border: 10px solid white;
+.swiper-pagination-bullet.dark_mode {
+  background-color: white;
 }
