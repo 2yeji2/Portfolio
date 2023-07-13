@@ -11,7 +11,7 @@
 }
 
 #first-main .title.dark_mode h2 {
-  color: #8c56fa;
+  color: #ad84ff;
 }
 
 /* 오른쪽 글 */
@@ -20,7 +20,7 @@
 }
 
 #first-main .suv-title.dark_mode #purple::before {
-  background-color: #8c56fa;
+  background-color: #ad84ff;
 }
 
 /* 메뉴 바 */
@@ -98,11 +98,19 @@
 }
 
 .project.dark_mode li h3::before {
-  background-color: #8c56fa;
+  background-color: #ad84ff;
 }
 
 .project.dark_mode li span::before {
-  background-color: #8c56fa;
+  background-color: #ad84ff;
+}
+
+.project.dark_mode li:last-child a {
+  color: white;
+}
+
+.project.dark_mode li:last-child a:hover {
+  color: black;
 }
 
 .project .box.dark_mode {
