@@ -2,7 +2,7 @@
 
 /* ----------------------------------section1-------------------------------------- */
 #first-main.dark_mode {
-  background: black;
+  background: #151515;
 }
 
 /* 왼쪽 제목 */
@@ -36,7 +36,7 @@
 
 /* ---------------------------------section3---------------------------------- */
 #second-main.dark_mode {
-  background-color: black;
+  background-color: #151515;
 }
 
 #second-main.dark_mode h3 {
@@ -65,7 +65,7 @@
 
 /* --------------------------------------section4------------------------------- */
 #third-main.dark_mode {
-  background-color: black;
+  background-color: #151515;
 }
 
 #third-main.dark_mode h4 {
@@ -86,7 +86,7 @@
 
 /* -----------------------------------------section6--------------------------------------- */
 #fourth-main.dark_mode {
-  background-color: black;
+  background-color: #151515;
 }
 
 #fourth-main.dark_mode h4 {
