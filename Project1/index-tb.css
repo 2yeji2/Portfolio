@@ -68,7 +68,7 @@ header {
 /* 로그인 메뉴 */
 
 .login li:nth-child(3) {
-  display: none;
+  display: block;
 }
 
 .login li:nth-child(4) {
@@ -76,23 +76,23 @@ header {
 }
 
 .login li:nth-child(5) {
-  display: block;
+  display: none;
 }
 
 /* menu */
 .menu {
   text-transform: uppercase;
   font-family: var(--font-ko);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
   padding: 20px;
-  height: 90vh;
+  height: 58vh;
   display: none;
 }
 
 .menu li {
-  margin: 5vh 05vh 0;
+  margin: 25px 0 25px 0;
 }
 
 /* banner */
@@ -103,6 +103,7 @@ header .main-banner {
   margin-bottom: 10vh;
   background: url(./images/Tbmain.png) no-repeat 40% / cover;
 }
+
 
 /* main */
 
@@ -167,137 +168,118 @@ main .ghost-btn {
   margin: 8vh;
 }
 
-/* 립스틱 스크롤 5개 */
-.swiper {
-  width: 80%;
-  height: 100%;
-}
+/* 립스틱 스크롤 3개 */
 
-.swiper-slide {
-  text-align: left;
-  font-family: var(--font-ko);
-  color: #ffffff;
-  text-transform: uppercase;
+.lipstick {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* 첫번째사진 */
-.matte {
-  background: url(../Project1/images/main-1.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 2vw;
+.lipstick p,
+h4 {
+  text-transform: uppercase;
+  font-family: var(--font-ko);
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  z-index: 1;
 }
 
-.matte p:first-child {
-  position: absolute;
-  bottom: 9vh;
-  left: 19vw;
-}
-
-.matte p:last-child {
-  position: absolute;
-  bottom: 4vh;
-  left: 19vw;
+.lipstick h4 {
+  font-size: 2rem;
   font-weight: 600;
-  font-size: 3vw;
+  margin-bottom: 10px;
 }
 
-/* 두번째사진 */
-.syrup {
-  background: url(../Project1/images/main-2.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 2vw;
-}
-
-.syrup p:first-child {
-  position: absolute;
-  bottom: 9vh;
-  left: 19vw;
-}
-
-.syrup p:last-child {
-  position: absolute;
-  bottom: 4vh;
-  left: 19vw;
-  font-weight: 600;
-  font-size: 3vw;
-}
-
-/* 세번째사진 */
-.yay {
-  background: url(../Project1/images/main-3.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 2vw;
-}
-
-.yay p:first-child {
-  position: absolute;
-  bottom: 9vh;
-  left: 19vw;
-}
-
-.yay p:last-child {
-  position: absolute;
-  bottom: 4vh;
-  left: 19vw;
-  font-weight: 600;
-  font-size: 3vw;
-}
-
-/* 네번재사진 */
-.rosy {
-  background: url(../Project1/images/main-4.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 2vw;
-}
-
-.rosy p:first-child {
-  position: absolute;
-  bottom: 9vh;
-  left: 19vw;
-}
-
-.rosy p:last-child {
-  position: absolute;
-  bottom: 4vh;
-  left: 19vw;
-  font-weight: 600;
-  font-size: 3vw;
-}
-
-/* 다섯번재사진 */
-.plumping {
-  background: url(../Project1/images/main-5.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 2vw;
-}
-
-.plumping p:first-child {
-  position: absolute;
-  bottom: 9vh;
-  left: 19vw;
-}
-
-.plumping p:last-child {
-  position: absolute;
-  bottom: 4vh;
-  left: 19vw;
-  font-weight: 600;
-  font-size: 3vw;
-}
-
-.swiper-slide img {
-  display: block;
+.lipstick .soft-matte {
   width: 50%;
-  height: 100%;
-  object-fit: cover;
+  margin: 10px auto;
+  background: url(./images/main-1.png) no-repeat 30% / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .soft-matte .box1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.lipstick .soft-matte:hover .box1 {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.lipstick .syrup {
+  width: 50%;
+  margin: 10px auto;
+  background: url(./images/main-2.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.lipstick .syrup .box2 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.lipstick .syrup:hover .box2 {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.lipstick .yay {
+  width: 50%;
+  margin: 10px auto;
+  background: url(./images/main-3.png) no-repeat 50% / cover;
+  display: none;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .yay .box3 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .yay:hover .box3 {
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* 리뷰 큐엔에이 쇼핑가이드 */

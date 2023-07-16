@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5vw;
+  padding: 3vw;
   height: 10vh;
   width: 100%;
 }
@@ -66,7 +66,7 @@ header {
 /* 로그인 메뉴 */
 
 .login li:nth-child(3) {
-  display: none;
+  display: block;
 }
 
 .login li:nth-child(4) {
@@ -74,107 +74,23 @@ header {
 }
 
 .login li:nth-child(5) {
-  display: block;
+  display: none;
 }
 
 /* menu */
 .menu {
   text-transform: uppercase;
   font-family: var(--font-ko);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   background-color: rgb(0, 0, 0);
   color: white;
-  padding: 3.5vw;
-  height: 90vh;
+  padding: 20px;
+  height: 58vh;
   display: none;
 }
 
 .menu li {
-  margin: 5vh 0 5vh 0;
-}
-
-/***** 햄버거 메뉴*****/
-.hamburger_btn {
-  margin: 1.5vh 2vw;
-}
-
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  font-size: 1.5vw;
-  user-select: none;
-}
-
-.checkmark {
-  position: relative;
-  top: -1.3vh;
-  left: 0;
-  height: 2vh;
-  width: 0.7vw;
-}
-
-.checkmark span {
-  width: 26px;
-  height: 2px;
-  background-color: rgb(0, 0, 0);
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.checkmark span.active {
-  background-color: #fff;
-}
-
-.checkmark span:nth-child(1) {
-  top: 10%;
-}
-
-.checkmark span:nth-child(2) {
-  top: 50%;
-}
-
-.checkmark span:nth-child(3) {
-  top: 90%;
-}
-
-.container input:checked + .checkmark span:nth-child(1) {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.container input:checked + .checkmark span:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-.container input:checked + .checkmark span:nth-child(3) {
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  transform: translateX(-50px);
-  opacity: 0;
+  margin: 25px 0 25px 0;
 }
 
 /* banner */
@@ -183,7 +99,7 @@ header .main-banner {
   width: 100%;
   position: relative;
   margin-bottom: 10vh;
-  background: url(./images/mbmain.png) no-repeat 50% / cover;
+  background: url(./images/mbmain.png) no-repeat 20% / cover;
 }
 
 /* blur the line */
@@ -224,137 +140,162 @@ main .ghost-btn {
   margin-bottom: 15vh;
 }
 
-/* 립스틱 스크롤 5개 */
-.swiper {
-  width: 90%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: left;
-  font-family: var(--font-ko);
-  color: #ffffff;
-  text-transform: uppercase;
+/* 립스틱 스크롤 3개 */
+.lipstick {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* 첫번째사진 */
-.matte {
-  background: url(../Project1/images/main-1.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 6vw;
+.lipstick p,
+h4 {
+  text-transform: uppercase;
+  font-family: var(--font-ko);
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  z-index: 1;
 }
 
-.matte p:first-child {
-  position: absolute;
-  bottom: 12vh;
-  left: 1vw;
-}
-
-.matte p:last-child {
-  position: absolute;
-  bottom: 8vh;
-  left: 1vw;
+.lipstick h4 {
+  font-size: 2rem;
   font-weight: 600;
-  font-size: 7vw;
+  margin-bottom: 10px;
 }
 
-/* 두번째사진 */
-.syrup {
-  background: url(../Project1/images/main-2.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 6vw;
-}
-
-.syrup p:first-child {
-  position: absolute;
-  bottom: 12vh;
-  left: 1vw;
-}
-
-.syrup p:last-child {
-  position: absolute;
-  bottom: 8vh;
-  left: 1vw;
-  font-weight: 600;
-  font-size: 7vw;
-}
-
-/* 세번째사진 */
-.yay {
-  background: url(../Project1/images/main-3.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 6vw;
-}
-
-.yay p:first-child {
-  position: absolute;
-  bottom: 12vh;
-  left: 1vw;
-}
-
-.yay p:last-child {
-  position: absolute;
-  bottom: 8vh;
-  left: 1vw;
-  font-weight: 600;
-  font-size: 7vw;
-}
-
-/* 네번재사진 */
-.rosy {
-  background: url(../Project1/images/main-4.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 6vw;
-}
-
-.rosy p:first-child {
-  position: absolute;
-  bottom: 12vh;
-  left: 1vw;
-}
-
-.rosy p:last-child {
-  position: absolute;
-  bottom: 8vh;
-  left: 1vw;
-  font-weight: 600;
-  font-size: 7vw;
-}
-
-/* 다섯번재사진 */
-.plumping {
-  background: url(../Project1/images/main-5.png) no-repeat 50%;
-  height: 80vh;
-  position: relative;
-  font-size: 6vw;
-}
-
-.plumping p:first-child {
-  position: absolute;
-  bottom: 12vh;
-  left: 1vw;
-}
-
-.plumping p:last-child {
-  position: absolute;
-  bottom: 8vh;
-  left: 1vw;
-  font-weight: 600;
-  font-size: 7vw;
-}
-
-.swiper-slide img {
-  display: block;
+.lipstick .soft-matte {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-1.png) no-repeat 100% / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  transition: 1s;
+}
+
+.lipstick .soft-matte .box1 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .syrup {
+  width: 100%;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-2.png) no-repeat 100% / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  /* display: none; */
+}
+
+.lipstick .syrup .box2 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .yay {
+  width: 100%;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-3.png) no-repeat 100% / cover;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .yay .box3 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .blur-water {
+  width: 100%;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-4.png) no-repeat 100% / cover;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .blur-water .box4 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lipstick .plumping {
+  width: 100%;
+  height: 60vh;
+  margin: 10px auto;
+  background: url(./images/main-5.png) no-repeat 100% / cover;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.lipstick .plumping .box5 {
+  width: 100%;
+  height: 60vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 17, 0.1292892156862745) 47%,
+    rgba(0, 0, 0, 0.7371323529411764) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* 리뷰이벤트*/
@@ -589,7 +530,7 @@ main .ghost-btn {
 .copy {
   font-family: var(--font-ko);
   color: #767676;
-  font-size: 0.3vw;
+  font-size: 10px;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
@@ -617,7 +558,7 @@ footer .copy2 p {
   text-align: center;
   transition: 0.7s;
   margin: 5vh 0 10px 12px;
-  font-size: 1vw;
+  font-size: 0.8rem;
 }
 
 .portfolio p a {

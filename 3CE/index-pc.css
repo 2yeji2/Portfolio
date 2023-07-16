@@ -66,7 +66,7 @@ header {
 
 /* 로그인 메뉴 */
 .login li:nth-child(3) {
-  display: none;
+  display: block;
 }
 
 .login li:nth-child(4) {
@@ -74,7 +74,7 @@ header {
 }
 
 .login li:nth-child(5) {
-  display: block;
+  display: none;
 }
 
 /* menu */
@@ -99,6 +99,7 @@ header {
   border-right: 1px solid white;
   font-size: 1.2rem;
   transition: 0.6s;
+  margin: 0;
 }
 
 .menu li:last-child {
@@ -116,7 +117,7 @@ header .main-banner {
   width: 100%;
   position: relative;
   margin-bottom: 10vh;
-  background: url(./images/PCmain.png) no-repeat;
+  background: url(./images/PCmain.png) no-repeat 50%;
 }
 
 /* main */
@@ -184,120 +185,137 @@ main .ghost-btn {
   margin: 8vh;
 }
 
-/* 립스틱 스크롤 3개 */
+/* 립스틱 스크롤 5개 */
+.swiper {
+  width: 80%;
+  height: 100%;
+}
 
-.lipstick {
-  width: 60vw;
-  margin: 0 auto;
+.swiper-slide {
+  text-align: left;
+  font-family: var(--font-ko);
+  color: #ffffff;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.lipstick p,
-h4 {
-  text-transform: uppercase;
-  font-family: var(--font-ko);
-  color: white;
-  text-align: left;
-  font-size: 1.5rem;
-  margin-left: 10px;
-  z-index: 1;
+/* 첫번째사진 */
+.matte {
+  background: url(../Project1/images/main-1.png) no-repeat 50%;
+  height: 80vh;
+  position: relative;
+  font-size: 2vw;
 }
 
-.lipstick h4 {
-  font-size: 2rem;
+.matte p:first-child {
+  position: absolute;
+  bottom: 16vh;
+  left: 29vw;
+}
+
+.matte p:last-child {
+  position: absolute;
+  bottom: 10vh;
+  left: 29vw;
   font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 3vw;
 }
 
-.lipstick .soft-matte {
-  width: 50%;
-  margin: 10px auto;
-  background: url(./images/main-1.png) no-repeat 100% / cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+/* 두번째사진 */
+.syrup {
+  background: url(../Project1/images/main-2.png) no-repeat 50%;
+  height: 80vh;
   position: relative;
-  overflow: hidden;
+  font-size: 2vw;
 }
 
-.lipstick .soft-matte .box1 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 0) 0%,
-    rgba(1, 0, 17, 0.1292892156862745) 47%,
-    rgba(0, 0, 0, 0.7371323529411764) 100%
-  );
+.syrup p:first-child {
   position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
+  bottom: 16vh;
+  left: 29vw;
 }
 
-.lipstick .soft-matte:hover .box1 {
-  opacity: 0;
-  cursor: pointer;
+.syrup p:last-child {
+  position: absolute;
+  bottom: 10vh;
+  left: 29vw;
+  font-weight: 600;
+  font-size: 3vw;
 }
 
-.lipstick .syrup {
-  width: 50%;
-  margin: 10px auto;
-  background: url(./images/main-2.png) no-repeat 100% / cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+/* 세번째사진 */
+.yay {
+  background: url(../Project1/images/main-3.png) no-repeat 50%;
+  height: 80vh;
   position: relative;
-  overflow: hidden;
+  font-size: 2vw;
 }
 
-.lipstick .syrup .box2 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 0) 0%,
-    rgba(1, 0, 17, 0.1292892156862745) 47%,
-    rgba(0, 0, 0, 0.7371323529411764) 100%
-  );
+.yay p:first-child {
   position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
+  bottom: 16vh;
+  left: 29vw;
 }
 
-.lipstick .syrup:hover .box2 {
-  opacity: 0;
-  cursor: pointer;
+.yay p:last-child {
+  position: absolute;
+  bottom: 10vh;
+  left: 29vw;
+  font-weight: 600;
+  font-size: 3vw;
 }
 
-.lipstick .yay {
-  width: 50%;
-  margin: 10px auto;
-  background: url(./images/main-3.png) no-repeat 100% / cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+/* 네번재사진 */
+.rosy {
+  background: url(../Project1/images/main-4.png) no-repeat 50%;
+  height: 80vh;
   position: relative;
+  font-size: 2vw;
 }
 
-.lipstick .yay .box3 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 0) 0%,
-    rgba(1, 0, 17, 0.1292892156862745) 47%,
-    rgba(0, 0, 0, 0.7371323529411764) 100%
-  );
+.rosy p:first-child {
   position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
+  bottom: 16vh;
+  left: 29vw;
 }
 
-.lipstick .yay:hover .box3 {
-  opacity: 0;
-  cursor: pointer;
+.rosy p:last-child {
+  position: absolute;
+  bottom: 10vh;
+  left: 29vw;
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+/* 다섯번재사진 */
+.plumping {
+  background: url(../Project1/images/main-5.png) no-repeat 50%;
+  height: 80vh;
+  position: relative;
+  font-size: 2vw;
+}
+
+.plumping p:first-child {
+  position: absolute;
+  bottom: 16vh;
+  left: 29vw;
+}
+
+.plumping p:last-child {
+  position: absolute;
+  bottom: 10vh;
+  left: 29vw;
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 리뷰 큐엔에이 쇼핑가이드 */
