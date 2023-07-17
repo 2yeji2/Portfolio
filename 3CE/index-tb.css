@@ -80,7 +80,10 @@ header {
 }
 
 /* menu */
-.menu {
+.pc-menu {
+  display: none;
+}
+.mo-tb-menu {
   text-transform: uppercase;
   font-family: var(--font-ko);
   font-size: 1.8rem;
@@ -91,7 +94,7 @@ header {
   display: none;
 }
 
-.menu li {
+.mo-tb-menu li {
   margin: 5vh 05vh 0;
 }
 
@@ -185,7 +188,7 @@ main .ghost-btn {
 
 /* 첫번째사진 */
 .matte {
-  background: url(../Project1/images/main-1.png) no-repeat 50%;
+  background: url(../3CE/images/main-1.png) no-repeat 50%;
   height: 80vh;
   position: relative;
   font-size: 2vw;
@@ -207,7 +210,7 @@ main .ghost-btn {
 
 /* 두번째사진 */
 .syrup {
-  background: url(../Project1/images/main-2.png) no-repeat 50%;
+  background: url(../3CE/images/main-2.png) no-repeat 50%;
   height: 80vh;
   position: relative;
   font-size: 2vw;
@@ -229,7 +232,7 @@ main .ghost-btn {
 
 /* 세번째사진 */
 .yay {
-  background: url(../Project1/images/main-3.png) no-repeat 50%;
+  background: url(../3CE/images/main-3.png) no-repeat 50%;
   height: 80vh;
   position: relative;
   font-size: 2vw;
@@ -251,7 +254,7 @@ main .ghost-btn {
 
 /* 네번재사진 */
 .rosy {
-  background: url(../Project1/images/main-4.png) no-repeat 50%;
+  background: url(../3CE/images/main-4.png) no-repeat 50%;
   height: 80vh;
   position: relative;
   font-size: 2vw;
@@ -670,8 +673,8 @@ footer .copy2 p {
   font-size: 14px;
   border-radius: 50%;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 2vw;
+  bottom: 2vh;
   transition: 0.5s;
 }
 

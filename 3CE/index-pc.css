@@ -78,7 +78,10 @@ header {
 }
 
 /* menu */
-.menu {
+.mo-tb-menu {
+  display: none;
+}
+.pc-menu {
   text-transform: uppercase;
   font-family: var(--font-ko);
   font-size: 1.5rem;
@@ -91,7 +94,7 @@ header {
   padding: 0;
 }
 
-.menu li {
+.pc-menu li {
   width: 12.5%;
   height: 5vh;
   text-align: center;
@@ -102,11 +105,11 @@ header {
   margin: 0;
 }
 
-.menu li:last-child {
+.pc-menu li:last-child {
   border-right: none;
 }
 
-.menu li:hover {
+.pc-menu li:hover {
   color: black;
   background-color: white;
 }
@@ -187,7 +190,7 @@ main .ghost-btn {
 
 /* 립스틱 스크롤 5개 */
 .swiper {
-  width: 80%;
+  width: 70%;
   height: 100%;
 }
 
@@ -203,112 +206,112 @@ main .ghost-btn {
 
 /* 첫번째사진 */
 .matte {
-  background: url(../Project1/images/main-1.png) no-repeat 50%;
+  background: url(../3CE/images/main-1.png) no-repeat 50%;
   height: 80vh;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .matte p:first-child {
   position: absolute;
   bottom: 16vh;
-  left: 29vw;
+  left: 1vw;
 }
 
 .matte p:last-child {
   position: absolute;
-  bottom: 10vh;
-  left: 29vw;
+  bottom: 12vh;
+  left: 1vw;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.9vw;
 }
 
 /* 두번째사진 */
 .syrup {
-  background: url(../Project1/images/main-2.png) no-repeat 50%;
+  background: url(../3CE/images/main-2.png) no-repeat 50%;
   height: 80vh;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .syrup p:first-child {
   position: absolute;
   bottom: 16vh;
-  left: 29vw;
+  left: 1vw;
 }
 
 .syrup p:last-child {
   position: absolute;
-  bottom: 10vh;
-  left: 29vw;
+  bottom: 12vh;
+  left: 1vw;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.9vw;
 }
 
 /* 세번째사진 */
 .yay {
-  background: url(../Project1/images/main-3.png) no-repeat 50%;
+  background: url(../3CE/images/main-3.png) no-repeat 50%;
   height: 80vh;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .yay p:first-child {
   position: absolute;
   bottom: 16vh;
-  left: 29vw;
+  left: 1vw;
 }
 
 .yay p:last-child {
   position: absolute;
-  bottom: 10vh;
-  left: 29vw;
+  bottom: 12vh;
+  left: 1vw;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.9vw;
 }
 
 /* 네번재사진 */
 .rosy {
-  background: url(../Project1/images/main-4.png) no-repeat 50%;
+  background: url(../3CE/images/main-4.png) no-repeat 50%;
   height: 80vh;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .rosy p:first-child {
   position: absolute;
   bottom: 16vh;
-  left: 29vw;
+  left: 1vw;
 }
 
 .rosy p:last-child {
   position: absolute;
-  bottom: 10vh;
-  left: 29vw;
+  bottom: 12vh;
+  left: 1vw;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.9vw;
 }
 
 /* 다섯번재사진 */
 .plumping {
-  background: url(../Project1/images/main-5.png) no-repeat 50%;
+  background: url(../3CE/images/main-5.png) no-repeat 50%;
   height: 80vh;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .plumping p:first-child {
   position: absolute;
   bottom: 16vh;
-  left: 29vw;
+  left: 1vw;
 }
 
 .plumping p:last-child {
   position: absolute;
-  bottom: 10vh;
-  left: 29vw;
+  bottom: 12vh;
+  left: 1vw;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.9vw;
 }
 
 .swiper-slide img {
@@ -692,8 +695,8 @@ footer .copy2 p {
   font-size: 14px;
   border-radius: 50%;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 2vw;
+  bottom: 2vh;
   transition: 0.5s;
 }
 

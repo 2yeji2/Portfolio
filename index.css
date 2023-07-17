@@ -90,7 +90,7 @@ article img:last-child {
   background: rgb(223, 223, 223) url(./images/moon.png) no-repeat 50%;
   align-items: center;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transition: all 0.7s;
 }
 
@@ -784,7 +784,7 @@ span.swiper-pagination-bullet {
 }
 .project ul li:last-child a:hover:after {
   transform: scaleX(1);
-  transition-delay: s;
+  transition-delay: 0s;
 }
 
 .project .box {
