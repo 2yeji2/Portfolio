@@ -760,14 +760,16 @@ span.swiper-pagination-bullet {
   background: var(--bgc-main);
   transform-style: linear;
   transition-property: height, width;
-  transition-delay: 0.3s, 0.5s;
+  transition-delay: 0.3s, 0.45s;
   transition-duration: 0.3s;
 }
+
 .project ul li:last-child a:hover:before {
   transition-property: width, height;
   width: 15px;
   height: 100%;
 }
+
 .project ul li:last-child a:after {
   content: "";
   position: absolute;
@@ -782,6 +784,7 @@ span.swiper-pagination-bullet {
   transform-origin: left;
   z-index: -1;
 }
+
 .project ul li:last-child a:hover:after {
   transform: scaleX(1);
   transition-delay: 0s;

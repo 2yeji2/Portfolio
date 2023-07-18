@@ -31,4 +31,12 @@ $(".toggle_box span").on("click", () => {
     .children("li")
     .children("h4")
     .toggleClass("dark_mode");
+  $(".publishing")
+    .children("ul")
+    .children("li")
+    .children("p")
+    .toggleClass("dark_mode");
+  $("footer").toggleClass("dark_mode");
+  $("footer").children("a").toggleClass("dark_mode");
+  $(".top-btn-svg").toggleClass("dark_mode");
 });
