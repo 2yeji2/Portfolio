@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* 홈버튼 */
+header a.dark_mode {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* 배경 */
+#project2.dark_mode {
+  background-color: #111;
+}
+
+/* project2 */
+#project2 .title.dark_mode {
+  color: white;
+}
+
+/* 다이닝노트제목 */
+.container .diningnote h1.dark_mode {
+  color: white;
+}
+
+.container .diningnote h1.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+.container .diningnote li.dark_mode {
+  color: white;
+}
+
+/* 오버뷰 */
+#overview.dark_mode {
+  background-color: #111;
+}
+
+#overview.dark_mode::after {
+  background-color: white;
+}
+
+#overview h3.dark_mode {
+  color: rgb(247, 239, 239);
+}
+
+#overview h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+.overview ul li.dark_mode {
+  color: white;
+}
+
+/* uxvision */
+#ux-vision.dark_mode {
+  background-color: #111;
+}
+
+#ux-vision.dark_mode::after {
+  background-color: white;
+}
+
+#ux-vision h3.dark_mode {
+  color: white;
+}
+
+#ux-vision h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#ux-vision p.dark_mode {
+  color: white;
+}
+
+/* 타임라인 */
+#Timeline.dark_mode {
+  background-color: #111;
+}
+
+#Timeline.dark_mode::after {
+  background-color: white;
+}
+
+#Timeline h3.dark_mode {
+  color: white;
+}
+
+#Timeline h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#Timeline li.dark_mode {
+  color: white;
+}
+
+/* 마이롤 */
+#my-role.dark_mode {
+  background-color: #111;
+}
+
+#my-role.dark_mode::after {
+  background-color: white;
+}
+
+#my-role h3.dark_mode {
+  color: white;
+}
+
+#my-role h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#my-role li.dark_mode {
+  color: white;
+}
+
+/* 와이어프레임 */
+#wire-frame.dark_mode {
+  background-color: #111;
+}
+
+#wire-frame.dark_mode::after {
+  background-color: white;
+}
+
+#wire-frame h3.dark_mode {
+  color: white;
+}
+
+#wire-frame h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+/* 프로토타입 */
+#prototype.dark_mode {
+  background-color: #111;
+}
+
+#prototype.dark_mode::after {
+  background-color: white;
+}
+
+#prototype h3.dark_mode {
+  color: white;
+}
+
+#prototype h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#prototype li p.dark_mode {
+  color: white;
+}
+
+#prototype li p .title.dark_mode {
+  color: #9ad8fc;
+}
+
+/* 개인리뷰 */
+#review.dark_mode {
+  background-color: #111;
+}
+
+#review h2.dark_mode {
+  color: white;
+}
+
+#review h2.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#review li.dark_mode {
+  color: white;
+}
+
+#review li h3.dark_mode {
+  color: white;
+}
+
+/* footer */
+footer.dark_mode {
+  background-color: #111;
+}
+
+footer a.dark_mode {
+  color: white;
+}
+
+footer a.dark_mode:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+.top-btn-svg.dark_mode {
+  fill: white;
+}
