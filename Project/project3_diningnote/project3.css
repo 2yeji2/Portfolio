@@ -6,6 +6,25 @@ html {
   font-family: var(--font-suv);
 }
 
+::selection {
+  background: #abdce7;
+  color: #fff;
+}
+
+/* scroll */
+body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--bgc-main);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #feff86;
+  border-radius: 20px;
+}
+
 header {
   height: 10vh;
   display: flex;
@@ -29,6 +48,9 @@ header a {
   margin: 2.5vh 0 0 2vw;
 }
 
+.bold {
+  font-weight: 700;
+}
 /* 다크모드 토글 */
 .toggle_box {
   display: flex;
