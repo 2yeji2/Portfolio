@@ -636,8 +636,8 @@ footer a:before {
 footer a:nth-child(2):before {
   content: "";
   position: absolute;
-  bottom: 15vh;
-  left: -15px;
+  bottom: 14.9vh;
+  left: -16px;
   width: 112%;
   height: 2px;
   background: var(--bgc-main);
@@ -657,13 +657,13 @@ footer a:hover:before {
 footer a:nth-child(2):hover:before {
   transition-property: width, height;
   width: 15px;
-  height: 22%;
+  height: 23%;
 }
 
 footer a:after {
   content: "";
   position: absolute;
-  top: 0vh;
+  top: 0.1vh;
   right: 0;
   width: 105%;
   height: 20%;

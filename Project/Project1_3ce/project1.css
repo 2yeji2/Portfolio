@@ -526,7 +526,7 @@ footer a:hover:before {
 footer a:nth-child(2):hover:before {
   transition-property: width, height;
   width: 15px;
-  height: 22%;
+  height: 22.7%;
 }
 
 footer a:after {
@@ -547,7 +547,7 @@ footer a:after {
 footer a:nth-child(2):after {
   content: "";
   position: absolute;
-  top: 0.5vh;
+  top: 0.4vh;
   right: 0;
   width: 105%;
   height: 23%;
