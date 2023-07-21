@@ -482,11 +482,16 @@ footer a {
   z-index: 999;
 }
 
+footer a:first-child,
+footer a:last-child {
+  font-size: 1.5vw;
+}
+
 footer a:before {
   content: "";
   position: absolute;
-  bottom: 15vh;
-  left: -0.7vw;
+  bottom: 15.5vh;
+  left: -13px;
   width: 120%;
   height: 2px;
   background: var(--bgc-main);
@@ -501,7 +506,7 @@ footer a:nth-child(2):before {
   content: "";
   position: absolute;
   bottom: 15vh;
-  left: -0.8vw;
+  left: -13px;
   width: 112%;
   height: 2px;
   background: var(--bgc-main);
@@ -518,13 +523,34 @@ footer a:hover:before {
   height: 20%;
 }
 
+footer a:nth-child(2):hover:before {
+  transition-property: width, height;
+  width: 15px;
+  height: 22%;
+}
+
 footer a:after {
   content: "";
   position: absolute;
-  top: 1vh;
-  right: 2px;
-  width: 100%;
+  top: 0.5vh;
+  right: 0;
+  width: 105%;
   height: 20%;
+  background-color: #decdff;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transition-delay: 0s;
+  transform-origin: left;
+  z-index: -1;
+}
+
+footer a:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 0.5vh;
+  right: 0;
+  width: 105%;
+  height: 23%;
   background-color: #decdff;
   transform: scaleX(0);
   transition: 0.3s;

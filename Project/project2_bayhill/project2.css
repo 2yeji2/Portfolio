@@ -475,6 +475,16 @@ header a {
   position: relative;
 }
 
+#publishing::after {
+  content: "";
+  position: absolute;
+  bottom: 3vh;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background-color: #000000;
+}
+
 #publishing h3 {
   font-size: 2.3vw;
   font-weight: 700;
@@ -604,16 +614,6 @@ header a {
   transition-delay: 0.3s;
 }
 
-.publishing::after {
-  content: "";
-  position: absolute;
-  bottom: 2%;
-  left: 5%;
-  width: 90%;
-  height: 1px;
-  background-color: #000000;
-}
-
 .publishing ul {
   margin-top: 15vh;
 }
@@ -665,7 +665,7 @@ header a {
   position: absolute;
   top: 45%;
   left: -2px;
-  width: 9.8%;
+  width: 8.8%;
   height: 2.9vh;
   background-color: #decdff;
   z-index: -1;
@@ -698,6 +698,55 @@ header a {
   background-color: #000000;
 }
 
+/* review */
+#review {
+  background-color: var(--bgc-suv);
+  padding-top: 5vh;
+  height: 250vh;
+  font-family: var(--font-suv);
+  position: relative;
+}
+
+#review h3 {
+  font-size: 2.3vw;
+  font-weight: 700;
+  margin-left: 17vw;
+  position: relative;
+  z-index: 1;
+}
+
+#review h3::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: -2px;
+  width: 9.8%;
+  height: 2.9vh;
+  background-color: #decdff;
+  z-index: -1;
+}
+
+#review li h4 {
+  font-size: 1.4vw;
+  font-weight: 600;
+  margin-bottom: 3vh;
+}
+
+#review ul {
+  width: 34%;
+  margin: 15vh 0 0 55vw;
+}
+
+#review li {
+  margin: 4vh 0 4vh 0;
+  font-size: 1.1vw;
+  line-height: 1.4;
+}
+
+#review li:last-child {
+  line-height: 1.5;
+}
+
 /* footer */
 footer {
   background-color: var(--bgc-suv);
@@ -716,10 +765,15 @@ footer a {
   z-index: 999;
 }
 
+footer a:first-child,
+footer a:last-child {
+  font-size: 1.5vw;
+}
+
 footer a:before {
   content: "";
   position: absolute;
-  bottom: 15vh;
+  bottom: 15.5vh;
   left: -13px;
   width: 120%;
   height: 2px;
@@ -734,8 +788,8 @@ footer a:before {
 footer a:nth-child(2):before {
   content: "";
   position: absolute;
-  bottom: 15vh;
-  left: -13px;
+  bottom: 14.9vh;
+  left: -14px;
   width: 112%;
   height: 2px;
   background: var(--bgc-main);
@@ -752,13 +806,34 @@ footer a:hover:before {
   height: 20%;
 }
 
+footer a:nth-child(2):hover:before {
+  transition-property: width, height;
+  width: 15px;
+  height: 22.7%;
+}
+
 footer a:after {
   content: "";
   position: absolute;
-  top: 1vh;
+  top: 0.5vh;
   right: 0;
-  width: 100%;
+  width: 105%;
   height: 20%;
+  background-color: #decdff;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transition-delay: 0s;
+  transform-origin: left;
+  z-index: -1;
+}
+
+footer a:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 0.5vh;
+  right: 0;
+  width: 105%;
+  height: 23%;
   background-color: #decdff;
   transform: scaleX(0);
   transition: 0.3s;
