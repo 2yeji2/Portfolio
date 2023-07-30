@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- open graph -->
    <meta property="og:title" content="3CE│STYLENANDA">
-   <meta property="og:description" content="3CE 리디자인 홈페이지 입니다.">
+   <meta property="og:description" content="포르쉐 리디자인 홈페이지 입니다.">
    <meta property="og:image" content="https://2yeji2.github.io/Portfolio/Project1/images/opengraphimg.jpg">
    <!-- font -->
    <link rel="stylesheet" href="../common/style/fonts.css">
@@ -18,15 +18,21 @@
    <!-- reset -->
    <link rel="stylesheet" href="../common/style/reset.css">
    <!-- variable -->
-   <link rel="stylesheet" href="../common/style/p">
+   <link rel="stylesheet" href="../common/style/porscheVariable.css">
    <!-- favicon -->
 
    <!-- css -->
    <link rel="stylesheet" href="index.css">
    <link rel="stylesheet" href="../common/style/swiper-bundle.min.css">
-   <!-- script -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- 외부 script -->
    <script src="../common/js/jquery-3.7.0.min.js"></script>
+   <script src="../common/js/gsap.min.js"></script>
+   <script src="../common/js/ScrollTrigger.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+   <!-- 내가만든js -->
    <script defer src="./index.js"></script>
    <title>포르쉐코리아</title>
 </head>
@@ -42,6 +48,7 @@
             <div class="bar"></div>
          </div>
          <section id="overlay">
+            <a href="#"><img src="./images/logo.png" alt="포르쉐로고"></a>
             <nav>
                <ul>
                   <li><a href="#">Model</a></li>
@@ -61,12 +68,55 @@
       </div>
    </header>
 
-   <!-- 메인 -->
-   <main>
-      <video autoplay muted>
+   <!-- 메인비디오 -->
+   <article class="section1">
+      <video autoplay muted loop>
          <source src="./images/main.mp4" type="video/mp4">
       </video>
       <!-- 스크롤다운 -->
+      <div class="arrow-container animated fadeInDown">
+         <div class="arrow-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -8 24 24" width="30" fill="#4b4b4b">
+               <path
+                  d="M7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364l4.95 4.95z">
+               </path>
+            </svg>
+         </div>
+         <div class="arrow-1 animated hinge infinite zoomIn"></div>
+      </div>
+   </article>
 
-   </main>
+   <!-- 2번째섹션 -->
+   <article class="section2">
+      <div class="txt-box">
+         <h1 data-aos="fade-up" data-aos-duration="200">makin</h1>
+         <h1 class="red thin g-1" data-aos="fade-up" data-aos-duration="300">g</h1>
+         <h1 class="red thin g-2" data-aos="fade-up" data-aos-duration="300">g</h1>
+         <h1 class="red thin g-3" data-aos="fade-up" data-aos-duration="300">g</h1>
+         <h1 data-aos="fade-up" data-aos-duration="400">the</h1>
+         <h1 class="red" data-aos="fade-up" data-aos-duration="500">perfect</h1>
+         <h1 data-aos="fade-up" data-aos-duration="600">thin</h1>
+         <h1 class="red thin g-4" data-aos="fade-up" data-aos-duration="700">g</h1>
+         <h1 class="red thin g-5" data-aos="fade-up" data-aos-duration="700">g</h1>
+         <h1 class="red thin g-6" data-aos="fade-up" data-aos-duration="700">g</h1>
+         <h1 data-aos="fade-up" data-aos-duration="200">m</h1>
+         <h1 class="red thin o-1" data-aos="fade-up" data-aos-duration="300">o</h1>
+         <h1 class="red thin o-2" data-aos="fade-up" data-aos-duration="300">o</h1>
+         <h1 class="red thin o-3" data-aos="fade-up" data-aos-duration="300">o</h1>
+         <h1 data-aos="fade-up" data-aos-duration="400">re</h1>
+         <h1 class="red" data-aos="fade-up" data-aos-duration="500">special</h1>
+      </div>
+
+      <p data-aos="fade-up" data-aos-duration="700">포르쉐는 특별한 스포츠카를 만드는 전통을 지켜야 할 의무가 있습니다.</p>
+
+      <!-- about -->
+      <div class="about" data-aos="fade-up" data-aos-duration="800">
+         <p><a href="#">about<br>porsche</a></p>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="loader">
+            <circle class="progress" fill="none" stroke-linecap="round" cx="20" cy="20" r="15.915494309" />
+         </svg>
+      </div>
+
+
+
 </body>

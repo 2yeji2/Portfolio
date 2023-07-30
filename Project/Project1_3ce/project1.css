@@ -6,7 +6,7 @@ html {
 }
 
 ::selection {
-  background: #abdce7;
+  background: #58aec2;
   color: #fff;
 }
 
@@ -268,7 +268,7 @@ header a {
 #design {
   background-color: var(--bgc-suv);
   padding-top: 10vh;
-  height: 125vh;
+  height: 135vh;
   font-family: var(--font-suv);
   position: relative;
 }
@@ -348,11 +348,12 @@ header a {
 
 .design .pallet li {
   width: 8vw;
-  height: 4vh;
-  text-align: center;
-  line-height: 4vh;
+  height: 5vh;
+  text-align: left;
+  line-height: 5vh;
   text-transform: uppercase;
   margin: 0 2vw;
+  padding-left: 1.7vw;
 }
 
 .design .pallet ul:first-child li:nth-child(1) {
