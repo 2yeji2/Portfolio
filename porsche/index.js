@@ -10,9 +10,7 @@ $("#toggle").click(function () {
 const movingImg = (evt) => {
   let x = evt.clientX;
   let y = evt.clientY;
-
   $(".about").css({ right: -20 + x / 30, bottom: -10 + y / 30 });
-
   requestAnimationFrame(movingImg);
 };
 $(".about").on("mousemove", movingImg);
