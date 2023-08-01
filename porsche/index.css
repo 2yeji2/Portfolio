@@ -730,10 +730,13 @@ p {
 }
 
 /* section4 */
+.section4 {
+  height: 70vh;
+}
 
 .section4 .txt-box {
   position: relative;
-  height: 100vh;
+  height: 50vh;
 }
 
 .section4 h1 {
@@ -755,32 +758,32 @@ p {
 /* make */
 .section4 h1:nth-child(1) {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 4vw;
 }
 
 /* y */
 .section4 h1:nth-child(2) {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 22vw;
 }
 
 /* o */
-.section4 .o-2 {
+.section4 .o-5 {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 26vw;
 }
 
-.section4 .o-1 {
+.section4 .o-4 {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 26vw;
-  animation: o-1 1.5s infinite alternate;
+  animation: o-4 1.5s infinite alternate;
 }
 
-@keyframes o-1 {
+@keyframes o-4 {
   from {
     left: 25.2vw;
   }
@@ -789,14 +792,14 @@ p {
   }
 }
 
-.section4 .o-3 {
+.section4 .o-6 {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 26vw;
-  animation: o-3 1.5s infinite alternate;
+  animation: o-6 1.5s infinite alternate;
 }
 
-@keyframes o-3 {
+@keyframes o-6 {
   from {
     left: 26.8vw;
   }
@@ -808,34 +811,34 @@ p {
 /* ur */
 .section4 h1:nth-child(6) {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 30.5vw;
 }
 
 /* ow */
 .section4 h1:nth-child(7) {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 40vw;
 }
 
 /* n */
 .section4 .n-2 {
   position: absolute;
-  top: 15vh;
-  left: 49.5vw;
+  top: 20vh;
+  left: 49.8vw;
 }
 
 .section4 .n-1 {
   position: absolute;
-  top: 15vh;
-  left: 49.5vw;
+  top: 20vh;
+  left: 49.8vw;
   animation: n-1 1.5s infinite alternate;
 }
 
 @keyframes n-1 {
   from {
-    left: 48.8vw;
+    left: 49vw;
   }
 
   to {
@@ -844,14 +847,14 @@ p {
 
 .section4 .n-3 {
   position: absolute;
-  top: 15vh;
-  left: 49.5vw;
+  top: 20vh;
+  left: 49.8vw;
   animation: n-3 1.5s infinite alternate;
 }
 
 @keyframes n-3 {
   from {
-    left: 50.3vw;
+    left: 50.5vw;
   }
 
   to {
@@ -861,39 +864,39 @@ p {
 /* porsche */
 .section4 h1:nth-child(11) {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   right: 18vw;
 }
 
 /* custom */
 .section4 h1:nth-child(12) {
   position: absolute;
-  top: 27vh;
+  top: 31vh;
   left: 4vw;
 }
 
 /* p */
 .section4 h1:nth-child(13) {
   position: absolute;
-  top: 27vh;
+  top: 31vh;
   left: 30vw;
 }
 
 /* 0 */
-.section4 .o-5 {
+.section4 .o-8 {
   position: absolute;
-  top: 27vh;
+  top: 31vh;
   left: 34vw;
 }
 
-.section4 .o-4 {
+.section4 .o-7 {
   position: absolute;
-  top: 27vh;
+  top: 31vh;
   left: 34vw;
-  animation: o-4 1.5s infinite alternate;
+  animation: o-7 1.5s infinite alternate;
 }
 
-@keyframes o-4 {
+@keyframes o-7 {
   from {
     left: 33.2vw;
   }
@@ -902,14 +905,14 @@ p {
   }
 }
 
-.section4 .o-6 {
+.section4 .o-9 {
   position: absolute;
-  top: 27vh;
+  top: 31vh;
   left: 34vw;
-  animation: o-6 1.5s infinite alternate;
+  animation: o-9 1.5s infinite alternate;
 }
 
-@keyframes o-6 {
+@keyframes o-9 {
   from {
     left: 34.8vw;
   }
@@ -919,8 +922,21 @@ p {
 }
 
 /* rsche */
-.section4 h1:last-child {
+.section4 h1:nth-child(17) {
   position: absolute;
-  top: 27vh;
-  left: 39vw;
+  top: 31vh;
+  left: 38.6vw;
+}
+
+.section4 .txt-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  margin-left: 4vw;
+}
+
+.section4 .txt-box2 a {
+  font-family: var(--font-ko);
+  font-size: 1.5vw;
 }
