@@ -29,7 +29,7 @@ gsap.to(fadeElement, {
     trigger: ".section2", // 스크롤 트리거로 사용할 요소
     start: "top 100%", // 애니메이션이 시작할 위치 (top 80% 지점)
     end: "bottom 10%", // 애니메이션이 끝날 위치 (bottom 20% 지점)
-    scrub: true, // 스크롤에 따라 부드럽게 애니메이션을 적용
+    scrub: false, // 스크롤에 따라 부드럽게 애니메이션을 적용
   },
 });
 

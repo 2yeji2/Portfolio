@@ -74,10 +74,11 @@ header img {
   bottom: 0;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease, max-height 0s 0.6s ease;
+  transition: all 0.3s ease, max-height 0s 0.3s ease;
   z-index: 100;
   opacity: 1;
-  background: black;
+  background: rgb(0, 0, 0);
+  height: 100vh;
 }
 
 #overlay nav {
@@ -350,6 +351,8 @@ header {
   transform-origin: 50% 50%;
   z-index: 999;
   opacity: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* 텍스트 */
@@ -605,7 +608,7 @@ p {
 
 /* 섹션3 */
 
-section {
+.section3 section {
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -616,7 +619,7 @@ section {
   margin: 0;
 }
 
-.g-img1 {
+.section3 .g-img1 {
   background: url(./images/porsche911.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -624,44 +627,300 @@ section {
   position: relative;
 }
 
-.g-img1 p {
+.section3 .g-img1 p {
   font-size: 1.5vw;
   position: absolute;
   top: -44vh;
   left: 2.5vw;
 }
 
-.g-img1 h2 {
+.section3 .g-img1 h2 {
   font-size: 3.5vw;
   position: absolute;
   top: -38.5vh;
   left: 2vw;
 }
 
-.g-img2 {
-  background: url(./images/porsche_cayenne.png) no-repeat 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.g-img3 {
-  background: url(./images/porsche_macan.png) no-repeat 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.g-img4 {
-  background: url(./images/porsche_panamera.png) no-repeat 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.g-img5 {
+.section3 .g-img2 {
   background: url(./images/porsche_taycan.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.section3 .g-img2 p {
+  font-size: 1.5vw;
+  position: absolute;
+  top: -44vh;
+  left: 2vw;
+}
+
+.section3 .g-img2 h2 {
+  font-size: 3.5vw;
+  position: absolute;
+  top: -38.5vh;
+  left: 2vw;
+}
+
+.section3 .g-img3 {
+  background: url(./images/porsche_macan.png) no-repeat 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.section3 .g-img3 p {
+  font-size: 1.5vw;
+  position: absolute;
+  top: -44vh;
+  left: 2vw;
+}
+
+.section3 .g-img3 h2 {
+  font-size: 3.5vw;
+  position: absolute;
+  top: -38.5vh;
+  left: 2vw;
+}
+
+.section3 .g-img4 {
+  background: url(./images/porsche_panamera.png) no-repeat 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.section3 .g-img4 p {
+  font-size: 1.5vw;
+  position: absolute;
+  top: -44vh;
+  left: 2vw;
+}
+
+.section3 .g-img4 h2 {
+  font-size: 3.5vw;
+  position: absolute;
+  top: -38.5vh;
+  left: 2vw;
+}
+
+.section3 .g-img5 {
+  background: url(./images/porsche_cayenne.png) no-repeat 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.section3 .g-img5 p {
+  font-size: 1.5vw;
+  position: absolute;
+  top: -44vh;
+  left: 2vw;
+}
+
+.section3 .g-img5 h2 {
+  font-size: 3.5vw;
+  position: absolute;
+  top: -38.5vh;
+  left: 2vw;
+}
+
+/* section4 */
+
+.section4 .txt-box {
+  position: relative;
+  height: 100vh;
+}
+
+.section4 h1 {
+  color: #000000;
+  font-family: var(--font-en);
+  font-size: 5.5vw;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section4 .red {
+  color: var(--color-main);
+}
+
+.section4 .thin {
+  font-weight: 100;
+}
+
+/* make */
+.section4 h1:nth-child(1) {
+  position: absolute;
+  top: 15vh;
+  left: 4vw;
+}
+
+/* y */
+.section4 h1:nth-child(2) {
+  position: absolute;
+  top: 15vh;
+  left: 22vw;
+}
+
+/* o */
+.section4 .o-2 {
+  position: absolute;
+  top: 15vh;
+  left: 26vw;
+}
+
+.section4 .o-1 {
+  position: absolute;
+  top: 15vh;
+  left: 26vw;
+  animation: o-1 1.5s infinite alternate;
+}
+
+@keyframes o-1 {
+  from {
+    left: 25.2vw;
+  }
+
+  to {
+  }
+}
+
+.section4 .o-3 {
+  position: absolute;
+  top: 15vh;
+  left: 26vw;
+  animation: o-3 1.5s infinite alternate;
+}
+
+@keyframes o-3 {
+  from {
+    left: 26.8vw;
+  }
+
+  to {
+  }
+}
+
+/* ur */
+.section4 h1:nth-child(6) {
+  position: absolute;
+  top: 15vh;
+  left: 30.5vw;
+}
+
+/* ow */
+.section4 h1:nth-child(7) {
+  position: absolute;
+  top: 15vh;
+  left: 40vw;
+}
+
+/* n */
+.section4 .n-2 {
+  position: absolute;
+  top: 15vh;
+  left: 49.5vw;
+}
+
+.section4 .n-1 {
+  position: absolute;
+  top: 15vh;
+  left: 49.5vw;
+  animation: n-1 1.5s infinite alternate;
+}
+
+@keyframes n-1 {
+  from {
+    left: 48.8vw;
+  }
+
+  to {
+  }
+}
+
+.section4 .n-3 {
+  position: absolute;
+  top: 15vh;
+  left: 49.5vw;
+  animation: n-3 1.5s infinite alternate;
+}
+
+@keyframes n-3 {
+  from {
+    left: 50.3vw;
+  }
+
+  to {
+  }
+}
+
+/* porsche */
+.section4 h1:nth-child(11) {
+  position: absolute;
+  top: 15vh;
+  right: 18vw;
+}
+
+/* custom */
+.section4 h1:nth-child(12) {
+  position: absolute;
+  top: 27vh;
+  left: 4vw;
+}
+
+/* p */
+.section4 h1:nth-child(13) {
+  position: absolute;
+  top: 27vh;
+  left: 30vw;
+}
+
+/* 0 */
+.section4 .o-5 {
+  position: absolute;
+  top: 27vh;
+  left: 34vw;
+}
+
+.section4 .o-4 {
+  position: absolute;
+  top: 27vh;
+  left: 34vw;
+  animation: o-4 1.5s infinite alternate;
+}
+
+@keyframes o-4 {
+  from {
+    left: 33.2vw;
+  }
+
+  to {
+  }
+}
+
+.section4 .o-6 {
+  position: absolute;
+  top: 27vh;
+  left: 34vw;
+  animation: o-6 1.5s infinite alternate;
+}
+
+@keyframes o-6 {
+  from {
+    left: 34.8vw;
+  }
+
+  to {
+  }
+}
+
+/* rsche */
+.section4 h1:last-child {
+  position: absolute;
+  top: 27vh;
+  left: 39vw;
 }
