@@ -1,5 +1,23 @@
 @charset "utf-8";
 
+/* scroll */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #222222;
+  border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* 헤더 */
 header {
   font-family: var(--font-en);
@@ -79,6 +97,7 @@ header img {
   opacity: 1;
   background: rgb(0, 0, 0);
   height: 100vh;
+  text-transform: uppercase;
 }
 
 #overlay nav {
@@ -338,15 +357,38 @@ header {
   cursor: url(./images/cursor.png) 4 5, url(./images/cursor.png),
     url(./images/cursor.png) 5 5, auto;
   position: relative;
+  overflow: hidden;
+}
+
+/* boxter글씨 */
+.section2 .boxter {
+  font-family: var(--font-en);
+  opacity: 0;
+  z-index: 9999;
+}
+
+.section2 .boxter p {
+  font-size: 1.5vw;
+  position: absolute;
+  top: -10vh;
+  left: 2.5vw;
+  font-weight: 500;
+}
+
+.section2 .boxter h2 {
+  font-size: 3.5vw;
+  position: absolute;
+  top: 7vh;
+  left: 2.5vw;
 }
 
 /* 스크롤이미지 */
 .section2 .scaleDown {
   width: 1vw;
-  height: 1vh;
+  height: 1vw;
   position: absolute;
-  top: 44.5vh;
-  left: 47%;
+  top: 47vh;
+  left: 50vw;
   background: url(./images/porsche718.png) no-repeat 50% / contain;
   transform-origin: 50% 50%;
   z-index: 999;
@@ -564,7 +606,7 @@ p {
 /* 회전원 */
 .loader {
   width: 13vw;
-  margin: 1vh 0 0 42vw;
+  margin: 1vh 0 0 0;
   stroke-width: 0.3px;
 }
 
@@ -593,13 +635,14 @@ p {
 
 .about {
   position: relative;
-  width: 80%;
+  width: 15%;
+  margin: 0 auto;
 }
 
 .about p {
   position: absolute;
   top: -5vh;
-  left: 45.7vw;
+  left: 3.7vw;
   font-family: var(--font-en);
   font-weight: 400;
   text-transform: uppercase;
@@ -617,9 +660,11 @@ p {
   font-size: 20vh;
   box-sizing: border-box;
   margin: 0;
+  font-family: var(--font-en);
 }
 
 .section3 .g-img1 {
+  height: 105vh;
   background: url(./images/porsche911.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -642,6 +687,7 @@ p {
 }
 
 .section3 .g-img2 {
+  height: 105vh;
   background: url(./images/porsche_taycan.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -664,6 +710,7 @@ p {
 }
 
 .section3 .g-img3 {
+  height: 105vh;
   background: url(./images/porsche_macan.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -686,6 +733,7 @@ p {
 }
 
 .section3 .g-img4 {
+  height: 105vh;
   background: url(./images/porsche_panamera.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -708,6 +756,7 @@ p {
 }
 
 .section3 .g-img5 {
+  height: 105vh;
   background: url(./images/porsche_cayenne.png) no-repeat 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -948,14 +997,14 @@ p {
 
 .section4 .build {
   position: relative;
-  margin: -7vh 0 0 30vw;
-  width: 30vw;
+  width: 15%;
+  margin: -7vh 0 0 68vw;
 }
 
 .section4 .build p {
   position: absolute;
   top: 10vh;
-  left: 45.5vw;
+  left: 3.5vw;
   font-family: var(--font-en);
   font-weight: 400;
   text-transform: uppercase;
@@ -977,7 +1026,6 @@ footer .search {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10.5vw;
   position: absolute;
   top: 5vh;
   right: 2.5vw;
@@ -1030,9 +1078,30 @@ footer .copy .icon {
 footer .icon li {
   background-color: #36393b;
   padding: 5px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 footer .icon li:hover {
   transform: translateY(-10px);
+}
+
+footer .icon li:first-child:hover {
+  background: #833ab4;
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+
+footer .icon li:nth-child(2):hover {
+  background-color: #ff0000;
+}
+
+footer .icon li:nth-child(3):hover {
+  background-color: #1877f2;
+}
+
+footer .icon li:nth-child(4):hover {
+  background-color: #0a63bc;
+}
+
+footer .icon li:last-child:hover {
+  background-color: #1c9cea;
 }
