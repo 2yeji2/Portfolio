@@ -238,11 +238,18 @@ header img {
 
 /* 메인비디오 */
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  padding-bottom: 2vh;
+  z-index: 99999;
+}
+
+header.active {
+  background-color: #a7a7a763;
 }
 
 .section1 {
-  height: 94vh;
+  height: 100vh;
   cursor: url(./images/cursor.png) 4 5, url(./images/cursor.png),
     url(./images/cursor.png) 5 5, auto;
 }
@@ -363,8 +370,9 @@ header {
 /* boxter글씨 */
 .section2 .boxter {
   font-family: var(--font-en);
-  opacity: 0;
+  opacity: 1;
   z-index: 9999;
+  transition: 1s;
 }
 
 .section2 .boxter p {
@@ -373,6 +381,8 @@ header {
   top: -10vh;
   left: 2.5vw;
   font-weight: 500;
+  z-index: 9999;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section2 .boxter h2 {
@@ -380,6 +390,8 @@ header {
   position: absolute;
   top: 7vh;
   left: 2.5vw;
+  z-index: 9999;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 /* 스크롤이미지 */
@@ -677,6 +689,7 @@ p {
   position: absolute;
   top: -44vh;
   left: 2.5vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img1 h2 {
@@ -684,6 +697,7 @@ p {
   position: absolute;
   top: -38.5vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img2 {
@@ -700,6 +714,7 @@ p {
   position: absolute;
   top: -44vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img2 h2 {
@@ -707,6 +722,7 @@ p {
   position: absolute;
   top: -38.5vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img3 {
@@ -723,6 +739,7 @@ p {
   position: absolute;
   top: -44vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img3 h2 {
@@ -730,6 +747,7 @@ p {
   position: absolute;
   top: -38.5vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img4 {
@@ -746,6 +764,7 @@ p {
   position: absolute;
   top: -44vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img4 h2 {
@@ -753,6 +772,7 @@ p {
   position: absolute;
   top: -38.5vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img5 {
@@ -769,6 +789,7 @@ p {
   position: absolute;
   top: -44vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 .section3 .g-img5 h2 {
@@ -776,6 +797,7 @@ p {
   position: absolute;
   top: -38.5vh;
   left: 2vw;
+  text-shadow: 0px 2px 4px #3b3b3b;
 }
 
 /* section4 */

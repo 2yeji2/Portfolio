@@ -45,15 +45,15 @@ $(".toggle_box span").on("click", () => {
 
 // 스와이퍼
 var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  keyboard: true,
-  mousewheel: true,
 });
