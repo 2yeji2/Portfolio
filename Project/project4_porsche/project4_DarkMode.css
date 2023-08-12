@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* 홈버튼 */
+header a.dark_mode {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* 배경 */
+#project4.dark_mode {
+  background-color: #111;
+}
+
+/* project4 */
+#project4 .title.dark_mode {
+  color: white;
+}
+
+/* 포르쉐제목 */
+.container .porsche h1.dark_mode {
+  color: white;
+}
+
+.container .porsche h1.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+.container .porsche h1.dark_mode::after {
+  background-color: #ad84ff;
+}
+
+.container .porsche li.dark_mode {
+  color: white;
+}
+
+/* 오버뷰 */
+#overview.dark_mode {
+  background-color: #111;
+}
+
+#overview.dark_mode::after {
+  background-color: white;
+}
+
+#overview h3.dark_mode {
+  color: rgb(247, 239, 239);
+}
+
+#overview h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+.overview ul li.dark_mode {
+  color: white;
+}
+
+/* 스타일 가이드 */
+#styleguide.dark_mode {
+  background-color: #111;
+}
+
+#styleguide.dark_mode::after {
+  background-color: white;
+}
+
+#styleguide h3.dark_mode {
+  color: rgb(247, 239, 239);
+}
+
+#styleguide h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#styleguide ul li.dark_mode {
+  color: white;
+}
+
+#styleguide .color.dark_mode {
+  color: white;
+}
+
+/* 타임라인 */
+#Timeline.dark_mode {
+  background-color: #111;
+}
+
+#Timeline.dark_mode::after {
+  background-color: white;
+}
+
+#Timeline h3.dark_mode {
+  color: white;
+}
+
+#Timeline h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#Timeline li.dark_mode {
+  color: white;
+}
+
+/* 마이롤 */
+#my-role.dark_mode {
+  background-color: #111;
+}
+
+#my-role.dark_mode::after {
+  background-color: white;
+}
+
+#my-role h3.dark_mode {
+  color: white;
+}
+
+#my-role h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#my-role li.dark_mode {
+  color: white;
+}
+
+/* 퍼블리싱 */
+#publishing.dark_mode {
+  background-color: #111;
+}
+
+#publishing.dark_mode::after {
+  background-color: white;
+}
+
+#publishing h3.dark_mode {
+  color: white;
+}
+
+#publishing h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#publishing .guide.dark_mode {
+  color: white;
+}
+
+#publishing .guide:hover.dark_mode {
+  color: black;
+  transition: 0.5s;
+}
+
+.publishing li.dark_mode {
+  color: white;
+}
+
+.publishing li p.dark_mode {
+  color: white;
+}
+
+.publishing .tech.dark_mode {
+  color: white;
+}
+
+.publishing .tech:hover.dark_mode {
+  color: black;
+  transition: 0.5s;
+}
+
+/* result */
+#result.dark_mode {
+  background-color: #111;
+}
+
+#result.dark_mode::after {
+  background-color: white;
+}
+
+#result h3.dark_mode {
+  color: white;
+}
+
+#result h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#result li.dark_mode {
+  color: white;
+}
+
+/* review */
+#review.dark_mode {
+  background-color: #111;
+}
+
+#review.dark_mode::after {
+  background-color: white;
+}
+
+#review h3.dark_mode {
+  color: white;
+}
+
+#review h3.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+#review li.dark_mode {
+  color: white;
+}
+
+/* footer */
+footer.dark_mode {
+  background-color: #111;
+}
+
+footer a.dark_mode {
+  color: white;
+}
+
+footer a.dark_mode:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+.top-btn-svg.dark_mode {
+  fill: white;
+}

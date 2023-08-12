@@ -793,9 +793,24 @@ span.swiper-pagination-bullet {
 .project .box {
   width: 50vw;
   height: 60vh;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .project .box3 {
   width: 40vw;
+}
+
+.project .box3 img {
+  width: 40%;
+}
+
+.project li .porsche::before {
+  content: "";
+  background-color: #decdff;
+  width: 51%;
+  height: 2.7vh;
+  position: absolute;
+  bottom: 6px;
+  left: -2px;
+  z-index: -1;
 }

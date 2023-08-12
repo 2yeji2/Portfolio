@@ -113,10 +113,6 @@
   color: black;
 }
 
-.project .box.dark_mode {
-  border: 10px solid rgb(175, 175, 175);
-}
-
 .swiper-button-prev.dark_mode:after,
 .swiper-button-next.dark_mode:after {
   color: rgb(255, 255, 255);
