@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* 홈버튼 */
+header a.dark_mode {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* 배경 */
+#project5.dark_mode {
+  background-color: #111;
+}
+
+/* project5 */
+#project5 .title.dark_mode {
+  color: white;
+}
+
+/* 제목 */
+.container .design_etc h1.dark_mode {
+  color: white;
+}
+
+.container .design_etc h1.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+.container .design_etc h1.dark_mode::after {
+  background-color: #ad84ff;
+}
+
+.container .design_etc li.dark_mode {
+  color: white;
+}
+
+.design.dark_mode {
+  background-color: #111;
+}
+
+.design h1.dark_mode {
+  color: white;
+}
+
+.design h1.dark_mode::before {
+  background-color: #ad84ff;
+}
+
+.design p.dark_mode {
+  color: white;
+}

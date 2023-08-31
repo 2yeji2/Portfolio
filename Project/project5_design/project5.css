@@ -149,7 +149,6 @@ header a {
   padding: 10vh 0 0 5vw;
 }
 
-/* 포르쉐 제목 */
 .container {
   width: 85%;
   height: 70vh;
@@ -161,18 +160,18 @@ header a {
   align-items: center;
 }
 
-.container .porsche {
+.container .design_etc {
   margin-left: 5vw;
 }
 
-.container .porsche h1 {
+.container .design_etc h1 {
   font-size: 4vw;
   font-weight: 700;
   position: relative;
   z-index: 1;
 }
 
-.container .porsche h1::before {
+.container .design_etc h1::before {
   content: "";
   position: absolute;
   top: 45%;
@@ -183,24 +182,24 @@ header a {
   z-index: -1;
 }
 
-.container .porsche ul {
+.container .design_etc ul {
   margin: 9vh 15vw 0 0;
   width: 23vw;
 }
 
-.container .porsche li {
+.container .design_etc li {
   font-size: 1.1vw;
   margin-top: 1.5vh;
   padding-bottom: 1.5vh;
   border-bottom: 1px solid #585858;
 }
 
-.container .porsche .gray {
+.container .design_etc .gray {
   color: #585858;
   font-weight: 600;
 }
 
-.container .porsche .bold {
+.container .design_etc .bold {
   font-weight: 700;
 }
 
@@ -213,13 +212,14 @@ header a {
 /* 디자인 리스트 */
 .design {
   margin-top: 20vh;
+  height: 80vh;
 }
 
 .design h1 {
   font-size: 3vw;
   font-weight: 500;
   font-family: var(--font-suv);
-  margin-left: 2vw;
+  margin-left: 4vw;
   position: relative;
   z-index: 999;
 }
@@ -229,16 +229,24 @@ header a {
   position: absolute;
   top: 3vh;
   left: 0;
-  width: 22.7%;
-  height: 3.5vh;
+  width: 23.4%;
+  height: 3.7vh;
   background-color: #decdff;
   z-index: -1;
 }
 
 .design p {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-family: var(--font-suv);
-  margin: 1vh 0 10vh 2vw;
+  margin: 1vh 0 10vh 4vw;
+}
+
+.design h2 {
+  font-size: 3vw;
+  font-family: "Modak", cursive;
+  margin-left: 3vw;
+  color: #f77683;
+  text-shadow: -0.03em 0.03em #fff6e6, -0.08em 0.08em #e7dcd7;
 }
 
 .design_list {
@@ -246,9 +254,10 @@ header a {
   width: 95%;
   height: 30vh;
   background-color: var(--bgc-suv);
-  border: 6px dashed #b288ff94;
+  border: 6px dashed #a27de6;
   border-radius: 50px;
   display: flex;
+  align-items: center;
 }
 
 .design_list li {
@@ -259,7 +268,12 @@ header a {
 }
 
 .design_list li img {
-  vertical-align: middle; /* 이미지를 수직 중앙에 정렬 */
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.design_list li img:hover {
+  transform: translateY(-30px);
 }
 
 /* 위로가기버튼 */
