@@ -80,7 +80,6 @@ function popup10() {
 }
 
 // 다크모드
-// 다크모드
 $(".toggle_box span").on("click", () => {
   $("header").children("a").toggleClass("dark_mode");
   $("#project5").toggleClass("dark_mode");
