@@ -255,6 +255,13 @@ header a {
   margin: 10vh auto;
 }
 
+.design_list li a {
+}
+
+.design_list li img {
+  vertical-align: middle; /* 이미지를 수직 중앙에 정렬 */
+}
+
 /* 위로가기버튼 */
 .top-btn {
   text-align: center;
