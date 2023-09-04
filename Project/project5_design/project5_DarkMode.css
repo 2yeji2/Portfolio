@@ -48,3 +48,22 @@ header a.dark_mode {
 .design p.dark_mode {
   color: white;
 }
+
+/* 다크모드 */
+/* footer */
+footer.dark_mode {
+  background-color: #111;
+}
+
+footer a.dark_mode {
+  color: white;
+}
+
+footer a.dark_mode:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+.top-btn-svg.dark_mode {
+  fill: white;
+}

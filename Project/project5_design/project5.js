@@ -93,4 +93,7 @@ $(".toggle_box span").on("click", () => {
   $(".design").children("h1").toggleClass("dark_mode");
   $(".design").children("p").toggleClass("dark_mode");
   $(".design").children("h2").toggleClass("dark_mode");
+  $("footer").toggleClass("dark_mode");
+  $("footer").children("a").toggleClass("dark_mode");
+  $(".top-btn-svg").toggleClass("dark_mode");
 });
